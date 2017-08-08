@@ -1135,6 +1135,22 @@
     ],
     "timestamp": "Jun/30/2020 10:10"
   },
+  "AC1497565": {
+    "contest_id": "abc068",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc068/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Decrease (Contestant ver.)",
+    "problem_url": "https://atcoder.jp/contests/abc068/tasks/arc079_b",
+    "submission_id": "AC1497565",
+    "submission_url": "https://atcoder.jp/contests/abc068/submissions/1497565",
+    "tags": [
+      "AtCoder",
+      "*600"
+    ],
+    "timestamp": "Aug/08/2017 19:34"
+  },
   "AC15059201": {
     "contest_id": "abc173",
     "language": "C++ (GCC 9.2.1)",
