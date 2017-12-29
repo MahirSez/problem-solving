@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF33787141": {
+    "contest_id": 908,
+    "language": "GNU C++14",
+    "path": "codeforces/908/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "New Year and Curling",
+    "problem_url": "https://codeforces.com/contest/908/problem/C",
+    "submission_id": "CF33787141",
+    "submission_url": "https://codeforces.com/contest/908/submission/33787141",
+    "tags": [
+      "brute force",
+      "geometry",
+      "implementation",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Dec/29/2017 23:28"
+  },
   "CF33856640": {
     "contest_id": 908,
     "language": "GNU C++14",
