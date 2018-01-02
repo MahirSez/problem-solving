@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF33856640": {
+    "contest_id": 908,
+    "language": "GNU C++14",
+    "path": "codeforces/908/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "New Year and Rainbow Roads",
+    "problem_url": "https://codeforces.com/contest/908/problem/F",
+    "submission_id": "CF33856640",
+    "submission_url": "https://codeforces.com/contest/908/submission/33856640",
+    "tags": [
+      "graphs",
+      "greedy",
+      "implementation",
+      "*2400"
+    ],
+    "timestamp": "Jan/02/2018 07:41"
+  },
   "CF33905483": {
     "contest_id": 900,
     "language": "GNU C++14",
