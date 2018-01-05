@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF33920643": {
+    "contest_id": 908,
+    "language": "GNU C++14",
+    "path": "codeforces/908/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "New Year and Arbitrary Arrangement",
+    "problem_url": "https://codeforces.com/contest/908/problem/D",
+    "submission_id": "CF33920643",
+    "submission_url": "https://codeforces.com/contest/908/submission/33920643",
+    "tags": [
+      "dp",
+      "math",
+      "probabilities",
+      "*2200"
+    ],
+    "timestamp": "Jan/05/2018 17:29"
+  },
   "CF33929533": {
     "contest_id": 912,
     "language": "GNU C++14",
