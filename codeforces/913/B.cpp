@@ -11,31 +11,34 @@
 #define MAX		1000006
 #define MOD		1000000007
 using namespace std;
-int n , ara[1001][1001], par[1001];
-bool nonlf[10000];
+int n;
+vector<int>edg[10000];
+bool lf[10000];
 int main()
 {
     cin>>n;
-    for( int i = 2 ; i<=n ; i++) {
+    for(int  i =0 ; i < 10000; i++ ) lf[i] = true;
+    for( int  i =2 ; i <=n ; i++ ){
 
-        int tmp,tmp1;
+        int tmp;
         cin>>tmp;
-        nonlf[tmp] = true;
-        par[i] = tmp;
-        ara[tmp][i] = 1;
-        tmp1 = par[tmp];
-        ara[tmp1][tmp] = 0;
+        edg[tmp].push_back(i);
+        lf[tmp] = false;
     }
     bool flg = true;
-    for( int  i = 1 ; i <= n; i++) {
-        int ans = 0;
-        for( int j = 1 ; j<= n ;j++ ) {
+    for( int  i =1 ; i<=n ; i++ ){
 
-            ans +=ara[i][j];
+        int cnt = 0;
+
+        for( int j =0 ; j < edg[i].size() ; j++ ){
+
+            int node = edg[i][j];
+            if( lf[node]) cnt++;
         }
-        if(nonlf[i] && ans<3 ) flg  = false;
+        if( !lf[i] && cnt < 3) flg = false;
     }
-    if( flg) cout<<"Yes"<<endl;
+
+    if( flg ) cout<<"Yes"<<endl;
     else cout<<"No"<<endl;
     return 0;
 }
