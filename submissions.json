@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF34197769": {
+    "contest_id": 567,
+    "language": "GNU C++14",
+    "path": "codeforces/567/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Geometric Progression",
+    "problem_url": "https://codeforces.com/contest/567/problem/C",
+    "submission_id": "CF34197769",
+    "submission_url": "https://codeforces.com/contest/567/submission/34197769",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "*1700"
+    ],
+    "timestamp": "Jan/15/2018 19:20"
+  },
   "CF34210332": {
     "contest_id": 505,
     "language": "GNU C++14",
