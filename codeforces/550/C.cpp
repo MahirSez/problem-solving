@@ -12,46 +12,45 @@
 #define MOD     1000000007
 using namespace std;
 string str;
+int dp[1000][10][5];
+
+int ok(int id , int mod, int taken) {
+
+    if( id == str.size() ) {
+
+        if(mod==0 && taken) return 1;
+        return 0;
+    }
+    int &ret = dp[id][mod][taken];
+
+    if( ret!=-1 ) return ret;
+    ret = 0;
+    ret |= ok(id+1 , mod , taken);
+    ret |= ok(id +1 , (mod* 10 + (str[id]-'0') ) % 8 , 1);
+    return ret;
+}
+
+
+void print(int id ,int mod ,int taken) {
+    if( id == str.size() ) return;
+
+    if( ok(id +1 , mod, taken) )
+         print(id+1 , mod , taken);
+    else {
+        cout<<str[id];
+        print(id +1 , (mod*10 +(str[id]-'0') ) % 8, 1);
+    }
+}
+
 int main()
 {
     cin>>str;
-    for( int k = 0 ; k < str.size() ; k++ ) {
-
-        if( (  (str[k] - '0') ) %8 ==0 ) {
-            cout<<"YES"<<endl;
-            cout<<str[k]<<endl;
-            return 0;
-        }
+    memset(dp , -1 , sizeof(dp));
+    if( ok(0,0,0)) {
+        cout<<"YES"<<endl;
+        print(0,0,0);
+        cout<<endl;
     }
-     for( int  j =0; j < str.size(); j++ ) {
-
-        for( int k = j +1 ; k < str.size() ; k++ ) {
-
-            if( (  (str[j]-'0')*10 + (str[k] - '0') ) %8 ==0 ) {
-                cout<<"YES"<<endl;
-                cout<<str[j]<<str[k]<<endl;
-                return 0;
-            }
-        }
-    }
-    for( int  i =0 ; i < str.size() ; i++ ) {
-
-        for( int  j =i+1; j < str.size(); j++ ) {
-
-            for( int k = j +1 ; k < str.size() ; k++ ) {
-
-                if( ( (str[i]-'0')*100 + (str[j]-'0')*10 + (str[k] - '0') ) %8 ==0 ) {
-                    cout<<"YES"<<endl;
-                    cout<<str[i]<<str[j]<<str[k]<<endl;
-                    return 0;
-                }
-            }
-        }
-    }
-
-
-
-
-    cout<<"NO"<<endl;
+    else cout<<"NO"<<endl;
     return 0;
 }
