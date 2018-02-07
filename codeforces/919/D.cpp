@@ -11,38 +11,40 @@
 #define MAX     1000006
 #define MOD     1000000007
 using namespace std;
-int n , m ,ans;
-string str;
+
+int n , m, ans = 0;
 vector<int>edg[MAX];
+string str;
 int vis[MAX];
-int dp[MAX][26];
+int ara[MAX][30];
+bool flg;
 
 bool dfs(int x) {
-    int take[26];
-    memset(take , 0 , sizeof(take));
-
-    if( vis[x] == 1) return false;
-
+    int take[29];
+    memset(take, 0 , sizeof(take));
+    if( vis[x] == 1) {
+        return false;
+    }
     if( vis[x] == 0) {
-
         vis[x] = 1;
-        for( int  i =0 ; i < edg[x].size() ; i++ ) {
+        for( int i =0 ; i < edg[x].size() ; i++ ) {
 
             int node = edg[x][i];
             bool flg1 = dfs(node);
-            if(flg1 == false) return false;
+            if( flg1 == false )
+                return false;
+            for( int  j = 0 ; j < 29; j++ ) {
 
-            for( int  j=0 ; j < 26; j++) {
+                take[j] = max( take[j] , ara[node][j]);
 
-                take[j] = max( take[j] ,dp[node][j] );
             }
         }
-        dp[x][str[x-1] - 'a'] = 1;
-        for( int i =0 ; i < 26; i++ ) {
-            dp[x][i] += take[i];
-            ans = max(dp[x][i] , ans);
-        }
 
+        ara[x][str[x-1]- 'a']++;
+        for( int  j =0 ; j < 29;j++) {
+            ara[x][j] += take[j];
+            ans = max( ans, ara[x][j]);
+        }
     }
     vis[x] = 2;
     return true;
@@ -50,20 +52,20 @@ bool dfs(int x) {
 
 int main()
 {
-    cin>>n>>m;
+    scanf("%d %d",&n,&m);
     cin>>str;
-    for( int  i=0 ; i< m ; i++ ) {
-        int a , b;
+    for( int  i =0 ; i< m ; i++) {
+        int a, b;
         scanf("%d %d",&a,&b);
         edg[a].push_back(b);
     }
-    int flg = true;
-    for( int i =1 ; i <= n ; i++ ) {
-
-        if( vis[i]  == false) {
+    //cout<<endl<<endl<<endl;
+    flg = true;
+    for( int  i =1 ; i <= n ;i++) {
+        if( vis[i] == 0) {
             flg = dfs(i);
         }
-        if( flg == false) break;
+        if(flg == false) break;
     }
     if( flg == false) cout<<-1<<endl;
     else cout<<ans<<endl;
