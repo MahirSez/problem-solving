@@ -20,11 +20,10 @@ ll solve(int id) {
     if( id  == 0 ) return 1LL;
     ll &ret = dp[id];
     if( ret != -1 ) return ret;
-    ret = 0;
-    if( id > 0 ) ret = solve(id-1);
-    ret %=MOD;
-    if( id - k >= 0 ) ret += solve(id-k) ;
-    return ret %= MOD;
+    ll ans1  = 0 , ans2 = 0;
+    if( id > 0 ) ans1 = solve(id-1);
+    if( id - k >= 0 ) ans2= solve(id-k) % MOD;
+    return ret = ( (ans1 % MOD + ans2 % MOD ) % MOD );
 }
 
 int main()
