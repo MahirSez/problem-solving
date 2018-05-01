@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF37795407": {
+    "contest_id": 231,
+    "language": "GNU C++14",
+    "path": "codeforces/231/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Magic Box",
+    "problem_url": "https://codeforces.com/contest/231/problem/D",
+    "submission_id": "CF37795407",
+    "submission_url": "https://codeforces.com/contest/231/submission/37795407",
+    "tags": [
+      "brute force",
+      "geometry",
+      "*1600"
+    ],
+    "timestamp": "May/01/2018 16:38"
+  },
   "CF37802609": {
     "contest_id": 975,
     "language": "GNU C++14",
