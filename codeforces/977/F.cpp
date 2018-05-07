@@ -10,7 +10,7 @@
 #define EPS     	1e-8
 #define MAX     	1000006
 #define MOD     	1000000007
-#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
+#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0)
 using namespace std;
 map<int,int>dp;
 int n , ara[MAX] , ans ,val;
