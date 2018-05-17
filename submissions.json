@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF38337974": {
+    "contest_id": 559,
+    "language": "GNU C++14",
+    "path": "codeforces/559/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Equivalent Strings",
+    "problem_url": "https://codeforces.com/contest/559/problem/B",
+    "submission_id": "CF38337974",
+    "submission_url": "https://codeforces.com/contest/559/submission/38337974",
+    "tags": [
+      "divide and conquer",
+      "hashing",
+      "sortings",
+      "strings",
+      "*1700"
+    ],
+    "timestamp": "May/17/2018 10:36"
+  },
   "CF38360113": {
     "contest_id": 982,
     "language": "GNU C++14",
