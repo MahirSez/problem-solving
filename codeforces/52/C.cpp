@@ -15,7 +15,7 @@ using namespace std;
 int n ,q;
 ll ara[MAX] , tree[4*MAX] ,lazy[4*MAX];
 
-void push(int node ,int l ,int r) {
+void pushdown(int node ,int l ,int r) {
     if( lazy[node]) {
         tree[node] += lazy[node];
         if( l !=r) {
@@ -44,11 +44,11 @@ void print() {
 }
 
 void update(int node ,int l, int r, int frm, int to ,int val) {
-    push(node, l , r);
+    pushdown(node, l , r);
     if( l > r || l > to || r < frm ) return ;
     if( l >=frm && r <= to) {
         lazy[node] += val;
-        push(node, l , r);
+        pushdown(node, l , r);
         return ;
     }
     int mid = (l+r)>>1;
@@ -58,7 +58,7 @@ void update(int node ,int l, int r, int frm, int to ,int val) {
 }
 
 ll query(int node, int l , int r ,int frm ,int to ) {
-    push(node, l , r);
+    pushdown(node, l , r);
     if( l > r || l > to || r < frm ) return INF;
     if( l >= frm && r <= to ) {
         return tree[node] ;
