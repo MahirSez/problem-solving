@@ -19,40 +19,51 @@ map<ll,int>mp;
 int cnt;
 
 
-void push(int node, int l ,int r) {
+void push(int node ,int l ,int r) {
     if( lazy[node]) {
-        tree[node]+=lazy[node];
-        if( l!=r) {
+        tree[node] += lazy[node];
+        if( l !=r) {
             lazy[node<<1] += lazy[node];
-            lazy[node<<1|1] += lazy[node];
+            lazy[node<<1|1] +=lazy[node];
         }
         lazy[node] = 0;
     }
 }
 
 
-void update(int node, int l ,int r ,int frm ,int to) {
-    push(node , l ,r );
-    if(l > r || r < frm || l >to || frm > to) return;
-    if( l >= frm && r <= to) {
-        lazy[node]++;
-        push(node , l , r);
+void update(int node ,int l, int r, int frm, int to ) {
+    push(node, l , r);
+    if( l > r || l > to || r < frm ) return ;
+    if( l >=frm && r <= to) {
+        lazy[node] ++;
+        push(node, l , r);
         return ;
     }
-    int mid = (l + r)>>1;
+    int mid = (l+r)>>1;
     update(node<<1 , l , mid , frm , to);
-    update(node<<1|1 , mid+1 , r , frm , to);
-    tree[node] = tree[node<<1] + tree[node<<1|1];
+    update(node<<1|1 , mid+1 , r , frm ,to );
+    tree[node] =  tree[node<<1] + tree[node<<1|1];
 }
 
-ll query(int node, int l , int r, int key) {
-    push(node, l , r );
-    if( l > r || l > key || r < key) return 0;
-    if( l == r) return tree[node];
+ll query(int node, int l , int r ,int key ) {
+    push(node, l , r);
+    if( l > r || l > key || r < key ) return 0;
+    if( l == r ) {
+        return tree[node] ;
+    }
     int mid = (l+r)>>1;
-    ll q1 = query(node<<1 , l , mid, key);
+    ll q1 = query(node<<1 , l , mid , key);
     ll q2 = query(node<<1|1 , mid+1 , r , key);
-    return q1+q2;
+    return q1 + q2;
+}
+
+void print() {
+
+    cout<<endl;
+    for(int i =1 ; i<= 20 ; i++ ) {
+        cout<<i<<" "<<tree[i]<<" "<<lazy[i]<<endl;
+    }
+    cout<<endl;
 }
 
 int main()
