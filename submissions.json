@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF39037237": {
+    "contest_id": 478,
+    "language": "GNU C++14",
+    "path": "codeforces/478/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Red-Green Towers",
+    "problem_url": "https://codeforces.com/contest/478/problem/D",
+    "submission_id": "CF39037237",
+    "submission_url": "https://codeforces.com/contest/478/submission/39037237",
+    "tags": [
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Jun/08/2018 11:56"
+  },
   "CF39040338": {
     "contest_id": 540,
     "language": "GNU C++14",
