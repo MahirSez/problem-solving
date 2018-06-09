@@ -37,6 +37,6 @@ int main()
     for(int i =0 ; i < n ;i++) cin>>cst[i];
     int ans = solve(0,0);
     if( ans==INF) cout<<-1<<endl;
-    else  cout<<ans<<endl;
+    else cout<<ans<<endl;
     return 0;
 }
