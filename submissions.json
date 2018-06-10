@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF39119286": {
+    "contest_id": 990,
+    "language": "GNU C++14",
+    "path": "codeforces/990/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Graph And Its Complement",
+    "problem_url": "https://codeforces.com/contest/990/problem/D",
+    "submission_id": "CF39119286",
+    "submission_url": "https://codeforces.com/contest/990/submission/39119286",
+    "tags": [
+      "constructive algorithms",
+      "graphs",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Jun/10/2018 18:19"
+  },
   "CF39130338": {
     "contest_id": 830,
     "language": "GNU C++14",
