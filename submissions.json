@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF39358344": {
+    "contest_id": 994,
+    "language": "GNU C++14",
+    "path": "codeforces/994/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Two Squares",
+    "problem_url": "https://codeforces.com/contest/994/problem/C",
+    "submission_id": "CF39358344",
+    "submission_url": "https://codeforces.com/contest/994/submission/39358344",
+    "tags": [
+      "brute force",
+      "*1600"
+    ],
+    "timestamp": "Jun/18/2018 20:28"
+  },
   "CF39400403": {
     "contest_id": 992,
     "language": "GNU C++14",
