@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF39548956": {
+    "contest_id": 991,
+    "language": "GNU C++14",
+    "path": "codeforces/991/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "If at first you don't succeed...",
+    "problem_url": "https://codeforces.com/contest/991/problem/A",
+    "submission_id": "CF39548956",
+    "submission_url": "https://codeforces.com/contest/991/submission/39548956",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jun/23/2018 21:43"
+  },
   "CF39555435": {
     "contest_id": 991,
     "language": "GNU C++14",
