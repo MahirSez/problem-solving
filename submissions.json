@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF39734798": {
+    "contest_id": 486,
+    "language": "GNU C++14",
+    "path": "codeforces/486/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Valid Sets",
+    "problem_url": "https://codeforces.com/contest/486/problem/D",
+    "submission_id": "CF39734798",
+    "submission_url": "https://codeforces.com/contest/486/submission/39734798",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "math",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Jun/28/2018 12:56"
+  },
   "CF39735690": {
     "contest_id": 14,
     "language": "GNU C++14",
