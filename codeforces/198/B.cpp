@@ -5,7 +5,7 @@
 #define uu      	first
 #define vv      	second
 #define write   	freopen("out.txt","w",stdout)
-#define pii     	pair<int,int>
+#define pii     	pair<int, pair<int,int> >
 #define INF     	1e9
 #define EPS     	1e-8
 #define MAX     	100005
@@ -14,20 +14,35 @@
 using namespace std;
 int n , k ;
 int ara[2][MAX];
-int  dp[2][MAX];
+int  dst[2][MAX];
 string str ;
 
-int dfs(int id , int lvl , int tim) {
-    if( tim > lvl ) return 0;
-    if( lvl >= n ) return  1;
-    if( ara[id][lvl] == -1) return 0;
-    int &ret = dp[id][lvl];
-    if( ret != -1 ) return  ret;
-    ret = 0;
-    ret |= dfs(id^1 , lvl+k , tim+1);
-    ret |= dfs(id , lvl+1 , tim + 1 );
-    ret |= dfs(id , lvl-1 , tim + 1 );
-    return ret;
+
+bool solve() {
+    priority_queue<pii , vector<pii> , greater<pii> > pq;
+    pq.push(make_pair(0 , make_pair(0,0) ));
+    while( !pq.empty() ) {
+        int tim = pq.top().uu;
+        int x = pq.top().vv.uu;
+        int y = pq.top().vv.vv;
+//        cout<<x<<" "<<y<<" "<<tim<<endl;
+        pq.pop();
+        if( y + k >=n )  return true;
+
+        if( ara[x][y+1] != -1 && dst[x][y+1] > tim+1 ) {
+            dst[x][y+1] = tim+1;
+            pq.push(make_pair(tim+1 , make_pair(x,y+1)));
+        }
+        if( y > 0 && ara[x][y-1] != -1 && dst[x][y-1] > tim+1 && tim+1 <= y-1) {
+            dst[x][y-1 ] = tim+1;
+            pq.push(make_pair(tim+1 , make_pair(x,y-1)));
+        }
+        if(ara[x^1][y+k] != -1 && dst[x^1][y+k] > tim+1) {
+            dst[x^1][y+k] = tim+1;
+            pq.push(make_pair(tim+1 , make_pair(x^1,y+k)));
+        }
+    }
+    return false;
 }
 
 int main()
@@ -38,9 +53,10 @@ int main()
     for(int i =0 ; i < n ; i++ ) if( str[i] =='X') ara[0][i] = -1;
     cin>>str;
     for(int i =0 ; i < n ; i++ ) if( str[i] =='X') ara[1][i] = -1;
-    memset( dp , -1 , sizeof dp);
-    int ok = dfs(0 , 0 , 0);
-    if( ok ) cout<<"YES"<<endl;
+    for(int i =0 ; i < n ; i++ ) dst[0][i] = INF , dst[1][i] = INF;
+    bool ok = solve();
+    if( ok) cout<<"YES"<<endl;
     else cout<<"NO"<<endl;
     return 0;
 }
+
