@@ -19,7 +19,7 @@ int main()
 {
     cin>>p>>q>>n;
     for(int i =0 ; i < n ; i++ ) cin>>ara[i];
-    for(int i =0 ; i < n; i++ ) {
+    for(int i =0 ; i < n-1; i++ ) {
         if( q > p / ara[i]) {
             cout<<"NO"<<endl;
             return 0;
@@ -27,7 +27,7 @@ int main()
         p -= q * ara[i];
         swap( p , q);
     }
-    if( q == 0) cout<<"YES"<<endl;
+    if( q != 0 && p%q ==0 && p/q == ara[n-1]) cout<<"YES"<<endl;
     else cout<<"NO"<<endl;
     return 0;
 }
