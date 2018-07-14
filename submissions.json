@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF40353316": {
+    "contest_id": 66,
+    "language": "GNU C++14",
+    "path": "codeforces/66/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Petya and His Friends",
+    "problem_url": "https://codeforces.com/contest/66/problem/D",
+    "submission_id": "CF40353316",
+    "submission_url": "https://codeforces.com/contest/66/submission/40353316",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*1700"
+    ],
+    "timestamp": "Jul/15/2018 00:20"
+  },
   "CF40366814": {
     "contest_id": 77,
     "language": "GNU C++14",
