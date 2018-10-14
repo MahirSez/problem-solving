@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF44295760": {
+    "contest_id": 1064,
+    "language": "GNU C++14",
+    "path": "codeforces/1064/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Equations of Mathematical Magic",
+    "problem_url": "https://codeforces.com/contest/1064/problem/B",
+    "submission_id": "CF44295760",
+    "submission_url": "https://codeforces.com/contest/1064/submission/44295760",
+    "tags": [
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Oct/14/2018 16:18"
+  },
   "CF44299158": {
     "contest_id": 1064,
     "language": "GNU C++14",
