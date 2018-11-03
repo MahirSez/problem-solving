@@ -1662,6 +1662,27 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF45230746": {
+    "contest_id": 708,
+    "language": "GNU C++11",
+    "path": "codeforces/708/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Centroids",
+    "problem_url": "https://codeforces.com/contest/708/problem/C",
+    "submission_id": "CF45230746",
+    "submission_url": "https://codeforces.com/contest/708/submission/45230746",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "dp",
+      "graphs",
+      "greedy",
+      "trees",
+      "*2300"
+    ],
+    "timestamp": "Nov/03/2018 12:53"
+  },
   "CF45231781": {
     "contest_id": 710,
     "language": "GNU C++11",
