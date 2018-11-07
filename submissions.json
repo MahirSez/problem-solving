@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF45398363": {
+    "contest_id": 1073,
+    "language": "GNU C++11",
+    "path": "codeforces/1073/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Berland Fair",
+    "problem_url": "https://codeforces.com/contest/1073/problem/D",
+    "submission_id": "CF45398363",
+    "submission_url": "https://codeforces.com/contest/1073/submission/45398363",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Nov/07/2018 12:41"
+  },
   "CF45407580": {
     "contest_id": 1066,
     "language": "GNU C++11",
