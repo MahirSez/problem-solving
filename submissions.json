@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF46226083": {
+    "contest_id": 1056,
+    "language": "GNU C++11",
+    "path": "codeforces/1056/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Pick Heroes",
+    "problem_url": "https://codeforces.com/contest/1056/problem/C",
+    "submission_id": "CF46226083",
+    "submission_url": "https://codeforces.com/contest/1056/submission/46226083",
+    "tags": [
+      "greedy",
+      "implementation",
+      "interactive",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Nov/26/2018 00:51"
+  },
   "CF46355013": {
     "contest_id": 653,
     "language": "GNU C++11",
