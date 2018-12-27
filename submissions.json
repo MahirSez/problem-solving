@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47548382": {
+    "contest_id": 271,
+    "language": "GNU C++11",
+    "path": "codeforces/271/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Good Substrings",
+    "problem_url": "https://codeforces.com/contest/271/problem/D",
+    "submission_id": "CF47548382",
+    "submission_url": "https://codeforces.com/contest/271/submission/47548382",
+    "tags": [
+      "data structures",
+      "strings",
+      "*1800"
+    ],
+    "timestamp": "Dec/27/2018 17:36"
+  },
   "CF47600263": {
     "contest_id": 8,
     "language": "GNU C++11",
