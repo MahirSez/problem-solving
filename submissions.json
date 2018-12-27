@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47600263": {
+    "contest_id": 8,
+    "language": "GNU C++11",
+    "path": "codeforces/8/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Train and Peter",
+    "problem_url": "https://codeforces.com/contest/8/problem/A",
+    "submission_id": "CF47600263",
+    "submission_url": "https://codeforces.com/contest/8/submission/47600263",
+    "tags": [
+      "strings",
+      "*1200"
+    ],
+    "timestamp": "Dec/28/2018 03:40"
+  },
   "CF47621535": {
     "contest_id": 727,
     "language": "GNU C++11",
