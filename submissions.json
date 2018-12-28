@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47649415": {
+    "contest_id": 1096,
+    "language": "GNU C++11",
+    "path": "codeforces/1096/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Polygon for the Angle",
+    "problem_url": "https://codeforces.com/contest/1096/problem/C",
+    "submission_id": "CF47649415",
+    "submission_url": "https://codeforces.com/contest/1096/submission/47649415",
+    "tags": [
+      "brute force",
+      "geometry",
+      "*1600"
+    ],
+    "timestamp": "Dec/28/2018 22:08"
+  },
   "CF47661324": {
     "contest_id": 1096,
     "language": "GNU C++11",
