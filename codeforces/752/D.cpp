@@ -47,7 +47,6 @@ int main()
     for(int i =0 ; i < rcd.size() ; i++ ) {
 
         string str = rcd[i];
-//        cout<<" --- "<<i<<" "<<mp[str]<<endl;
         string rev = str;
         reverse(rev.begin() , rev.end());
 
@@ -55,21 +54,30 @@ int main()
 
             int id = mp[str];
 
-            for(int j = edg[id].size()-2 ; j >=0 ; j-=2 ) {
+            for(int j = edg[i].size()-2 ; j >=0 ; j-=2 ) {
 
                 ll tmp = edg[id][j] + edg[id][j+1] ;
-                if( tmp <= 0) {
 
-                    center = max(center , edg[id][j+1]);
-                    break;
+                if( edg[id][j] < 0) {
+                    center = max(center , (tmp > 0 ? -edg[id][j] : edg[id][j+1] ) );
                 }
-                else {
-                    center = max(center , -edg[id][j]);
-
-                    beauty += tmp;
-
-                    edg[id].erase(edg[id].begin() + j , edg[id].end());
-                }
+                if( tmp <=0) break;
+                beauty += tmp;
+                edg[id].erase(edg[id].begin() +j , edg[id].end() );
+//
+//                if( tmp <= 0) {
+//
+//                    center = max(center , edg[id][j]);
+//                    break;
+//                }
+//                else {
+//                    center = max(center , -edg[id][j+1]);
+//
+//                    beauty += tmp;
+//
+//                    edg[id].erase(edg[id].begin() );
+//                    edg[id].erase(edg[id].begin() );
+//                }
             }
 
             if( (int)edg[id].size() >0 ) center = max(center , edg[id][0]);
