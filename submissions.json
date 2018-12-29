@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47707800": {
+    "contest_id": 25,
+    "language": "GNU C++11",
+    "path": "codeforces/25/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Test",
+    "problem_url": "https://codeforces.com/contest/25/problem/E",
+    "submission_id": "CF47707800",
+    "submission_url": "https://codeforces.com/contest/25/submission/47707800",
+    "tags": [
+      "hashing",
+      "strings",
+      "*2200"
+    ],
+    "timestamp": "Dec/30/2018 04:21"
+  },
   "CF47720947": {
     "contest_id": 7,
     "language": "GNU C++11",
