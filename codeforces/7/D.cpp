@@ -24,52 +24,36 @@ pll operator-(pll x,pll y) { return {x.uu - y.uu, x.vv - y.vv} ;}
 pll operator*(pll x,pll y) { return {x.uu * y.uu , x.vv * y.vv} ;}
 pll operator%(pll x,pll y) { return {x.uu % y.uu, x.vv % y.vv} ;}
 
-const pll p = {15485867,32452843};
+const pll p = {103,101};
 
 const pll  mod = {1000000021, 1e9 + 9 };
 
-string str ,rev;
-pll p_pow[MAX] , h2[MAX] , h1;
-
-int rec[MAX] , n;
+string str ;
 
 ll ans ;
+
+pll forH , bacH , power;
 
 int main()
 {
     fastRead;
     cin>>str;
-    rev = str;
-    reverse(rev.begin() , rev.end());
-    n = str.size();
-    p_pow[0] = {1,1};
+    power = {1 , 1};
+    vector<ll>dp(str.size()+5);
 
-    for(int i =1 ; i < MAX ; i++) {
-        p_pow[i] = (p_pow[i-1]*p)%mod;
-    }
+    for(int i = 1; i <= str.size() ; i++ ) {
 
-    for(int i =0 ; i < str.size() ; i++ ) {
-        h2[i+1] = (h2[i] + p_pow[i]*(int)rev[i])%mod;
-    }
+        forH = (forH + power*str[i-1])%mod;
+        bacH = ( p*bacH + str[i-1] )%mod;
 
-    rec[1] = 1;
-    ans = 1;
-    h1 = (p_pow[0] * (int)str[0])%mod;
+        power = (p*power)%mod;
 
-    for(int i =2 ; i<= n ;i++ ) {
-
-        h1 = (h1 + p_pow[i-1]*(int)str[i-1] )%mod;
-
-        pll tmp = (h1 * p_pow[MAX-2])%mod;
-        int id = n - i + 1;
-
-        if( tmp == ( ( ( h2[n]+mod-h2[id-1] )%mod )* p_pow[MAX-1-id] )%mod ) {
-            rec[i] = rec[i/2]+1;
+        if( forH == bacH ) {
+            dp[i] = dp[i/2]+1;
         }
-        ans += rec[i];
-
+        ans += dp[i];
     }
-
     cout<<ans<<endl;
     return 0;
 }
+
