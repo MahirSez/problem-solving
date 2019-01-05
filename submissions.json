@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47973539": {
+    "contest_id": 1097,
+    "language": "GNU C++11",
+    "path": "codeforces/1097/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Makoto and a Blackboard",
+    "problem_url": "https://codeforces.com/contest/1097/problem/D",
+    "submission_id": "CF47973539",
+    "submission_url": "https://codeforces.com/contest/1097/submission/47973539",
+    "tags": [
+      "dp",
+      "math",
+      "number theory",
+      "probabilities",
+      "*2200"
+    ],
+    "timestamp": "Jan/05/2019 22:21"
+  },
   "CF47974414": {
     "contest_id": 1099,
     "language": "GNU C++11",
