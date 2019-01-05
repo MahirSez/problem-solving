@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF47991922": {
+    "contest_id": 1099,
+    "language": "GNU C++11",
+    "path": "codeforces/1099/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Postcard",
+    "problem_url": "https://codeforces.com/contest/1099/problem/C",
+    "submission_id": "CF47991922",
+    "submission_url": "https://codeforces.com/contest/1099/submission/47991922",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Jan/05/2019 23:25"
+  },
   "CF48003754": {
     "contest_id": 1099,
     "language": "GNU C++11",
