@@ -42,7 +42,7 @@ ll solve(ll prime , int fre) {
         ll sum = 0;
         for(int j =0 ; j <=fre ; j++ ) {
             sum = (sum + dp[i-1][j] ) %MOD;
-            dp[i][j] = (sum * modInverse(j+1) )%MOD;
+            dp[i][j] = (sum * inv[j+1] )%MOD;
         }
     }
 
@@ -54,7 +54,7 @@ int main()
 {
     cin>>n>>k;
     ans = 1;
-    //for(int i =1 ; i<= 60 ; i++ ) inv[i] = modInverse(i);
+    for(int i =1 ; i<= 60 ; i++ ) inv[i] = modInverse(i);
     for(ll i = 2; i * i <=n; i++) {
 
         int cnt = 0;
