@@ -1,29 +1,51 @@
-#include<bits/stdc++.h>
-#define MAX 1000006
-#define INF 2e9
+#include <bits/stdc++.h>
+#define ll      	long long int
+#define PI      	acos(-1)
+#define read    	freopen("in.txt","r",stdin)
+#define uu      	first
+#define vv      	second
+#define write   	freopen("out.txt","w",stdout)
+#define pii     	pair<int,int>
+#define pll         pair<ll,ll>
+#define INF     	2e9
+#define EPS     	1e-8
+#define MAX     	100005
+#define MOD     	1000000007
+#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
-int a[MAX] , b[MAX] , c[MAX] , dp[MAX][4];
+int n , ara[MAX][5] , dp[MAX][5];
+
+int solve(int id , int prev) {
+
+    if( id ==n ) return 0;
+
+    int &ret = dp[id][prev];
+    if( ret != -1)  return ret;
+
+    ret = 0;
+    for(int i =1 ; i <= 3; i++ ) {
+
+        if( prev ==i ) continue;
+//        cout<<id<<" "<<i<<endl;
+
+        ret = max( ret , ara[id][i] + solve(id+1 , i) );
+    }
+    return ret;
+
+}
+
 int main()
 {
-    int n;
+    fastRead;
     cin>>n;
-    for(int i =0 ; i < n ; i++) cin>>a[i]>>b[i]>>c[i];
-
-    dp[0][0] = a[0];
-    dp[0][1] = b[0];
-    dp[0][2] = c[0];
-
-    for(int i =1 ; i < n ; i++ ) {
-
-        for(int j = 0 ; j < 3 ; j++) {
-
-            if(j != 0) dp[i][0] = max(dp[i-1][1] , dp[i-1][2]) + a[i];
-            if(j != 1) dp[i][1] = max(dp[i-1][0] , dp[i-1][2]) + b[i];
-            if(j != 2) dp[i][2] = max(dp[i-1][0] , dp[i-1][1]) + c[i];
+    for(int i =0 ; i < n ; i++ ) {
+        for(int j =1 ; j <= 3; j++ ) {
+            cin>>ara[i][j];
         }
     }
 
-    cout<<max(dp[n-1][0] , max(dp[n-1][1] , dp[n-1][2]))<<endl;
+    memset(dp , -1   ,sizeof dp);
+    int ans = solve(0 , 0);
+    cout<<ans<<endl;
     return 0;
 }
-
