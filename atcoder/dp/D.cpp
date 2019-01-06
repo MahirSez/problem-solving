@@ -1,32 +1,42 @@
-#include<bits/stdc++.h>
-#define MAX 100005
-#define INF 2e9
-#define ll long long int
-#define fastRead ios::sync_with_stdio(0);cin.tie(0);
-
+#include <bits/stdc++.h>
+#define ll      	long long int
+#define PI      	acos(-1)
+#define read    	freopen("in.txt","r",stdin)
+#define uu      	first
+#define vv      	second
+#define write   	freopen("out.txt","w",stdout)
+#define pii     	pair<int,int>
+#define pll         pair<ll,ll>
+#define INF     	1e9
+#define EPS     	1e-8
+#define MAX     	1000006
+#define MOD     	1000000007
+#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
-int n ,W;
-ll v[200] , w[200] ,dp[200][MAX];
+int n , W , wt[200] ;
+ll val[200] , dp[200][100005];
 
-int main()
-{
-	fastRead;
-	cin>>n>>W;
 
-	for(int i =1 ; i<= n ; i++ ) cin>>w[i]>>v[i];
+ll solve(int id ,int taken) {
 
-    for(int i = 1 ; i <= n ; i++ ) {
+     if( id == n ) return 0;
+     ll &ret = dp[id][taken];
+     if( ret != -1 )return ret;
 
-        for(int j =1 ; j <= W ; j++ ) {
+     ret = solve(id+1 , taken);
 
-            if(w[i] <= j ) {
-                dp[i][j] = max(dp[i-1][j] , dp[i-1][j - w[i]]  + v[i]);
-            }
-            else dp[i][j] = dp[i-1][j];
-        }
+     if( taken + wt[id] <= W)
+        ret= max(ret , val[id] + solve(id+1 , taken+wt[id]));
+     return ret;
+}
+
+int main(){
+    fastRead;
+    cin>>n>>W;
+    for(int i =0 ; i < n ; i++ ) {
+        cin>>wt[i]>>val[i];
     }
-
-    cout<<dp[n][W]<<endl;
+    memset(dp , -1 , sizeof dp);
+    cout<<solve(0 , 0 )<<endl;
     return 0;
-
 }
