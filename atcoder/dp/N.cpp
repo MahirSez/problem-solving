@@ -1,48 +1,45 @@
 #include <bits/stdc++.h>
-#define ll          long long int
-#define uu          first
-#define vv          second
-#define pii         pair<int,int>
+#define ll      	long long int
+#define PI      	acos(-1)
+#define read    	freopen("in.txt","r",stdin)
+#define uu      	first
+#define vv      	second
+#define write   	freopen("out.txt","w",stdout)
+#define pii     	pair<int,int>
 #define pll         pair<ll,ll>
-#define INF         1e18
-#define fastRead    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
+#define INF     	1e18
+#define EPS     	1e-8
+#define MAX     	1000006
+#define MOD     	1000000007
+#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
+int n;
+ll ara[500] , sum[500] , dp[500][500];
 
-const int MAX = 1e5 + 5;
-const ll MOD = 1e9 + 7;
-ll dp[500][500];
+ll solve(int frm , int to) {
+
+    if( frm > to) return INF;
+
+    if( frm == to ) return 0;
+    ll &ret = dp[frm][to];
+    if( ret != -1) return ret;
+
+    ret = INF;
+
+    for(int i = frm ; i <= to ; i++ ) {
+
+        ret = min( ret , solve(frm , i ) + solve(i+1 , to)  + sum[to] - sum[frm-1] );
+    }
+    return ret;
+}
 
 int main()
 {
     fastRead;
-    int n;
     cin>>n;
-    vector<ll>vec(n+1), sum(n+1);
-    for(int i =1 ; i <=n; i++ ) cin>>vec[i], sum[i] = (sum[i-1]+ vec[i]);
-    
-    for(int i = 1; i <=n ; i++ ) {
-        for(int j =1 ; j <=n ; j++ ) dp[i][j] = INF;
-    }
-    
-    for(int i =1 ; i <=n ; i++ ) dp[1][i] = vec[i];
-    
-    
-    for(int i = 2; i <=n ; i++ ) {
-        for(int j = 1; j + i - 1 <=n ; j++ ) {
-            for(int k = 1; k < i ; k++ ) {
-                
-                int len1 = k, len2 = i - k;
-                int frm1 = j ,frm2 = j + len1;
-                
-                int to = j + i -1;
-                
-//                cout<<i<<" -> "<<j<<" "<<i + j-1<<" -- "<<frm1<<" "<<frm1 + len1-1<<" -- "<<frm2<<" "<<len2 + frm2-1;
-//                cout<<"\t--"<<dp[len1][frm1]<<" "<<dp[len2][frm2]<<" "<<sum[to] - sum[frm1-1]<<'\n';
-                
-                dp[i][j] = min(dp[i][j], dp[len1][frm1] + dp[len2][frm2] + sum[to] - sum[frm1-1]);
-            }
-        }
-    }
-    cout<<dp[n][1] - sum[n]<<'\n';
+    for(int i = 1 ; i<= n ; i++ ) cin>>ara[i];
+    for(int i =1 ; i<= n ; i++ ) sum[i] = ara[i] + sum[i-1];
+    memset(dp , -1 , sizeof dp);
+    cout<<solve(1 , n)<<endl;
     return 0;
 }
