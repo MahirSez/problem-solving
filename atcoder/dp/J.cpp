@@ -1,44 +1,56 @@
 #include <bits/stdc++.h>
-#define ll          long long int
-#define uu          first
-#define vv          second
-#define pii         pair<int,int>
+#define ll      	long long int
+#define PI      	acos(-1)
+#define read    	freopen("in.txt","r",stdin)
+#define uu      	first
+#define vv      	second
+#define write   	freopen("out.txt","w",stdout)
+#define pii     	pair<int,int>
 #define pll         pair<ll,ll>
-#define INF         1e9
-#define fastRead    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
+#define INF     	1e9
+#define EPS     	1e-8
+#define MAX     	1000006
+#define MOD     	1000000007
+#define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
+int n , vis[500][500][500];
+double dp[500][500][500];
+int one , two , three;
 
-const int MAX = 1e6 + 6;
-double dp[400][400][400];
 
-int ara[4];
+double solve(int uno , int dos , int tres) {
+
+    int tot = uno + dos + tres;
+    if( tot == 0 ) {
+        return 0;
+    }
+
+    int &ret = vis[uno][dos][tres];
+    if( ret != 0 ) return dp[uno][dos][tres];
+    ret = 1;
+
+    double ans = n*1.00/tot -1;
+    if( uno ) ans += uno*1.00/tot * (1 + solve(uno -1 , dos , tres) ) ;
+    if( dos ) ans += dos*1.00/tot * (1 + solve(uno +1 , dos-1 , tres));
+    if( tres) ans += tres*1.00/tot * (1 + solve(uno , dos + 1 , tres-1));
+
+    return dp[uno][dos][tres] =ans;
+
+}
+
 
 int main()
 {
     fastRead;
-    int n;
     cin>>n;
-    for(int i = 0 ; i < n ; i++ ) {
+    for(int i =0 ; i < n ; i++ ) {
         int tmp;
         cin>>tmp;
-        ara[tmp]++;
+        if( tmp == 1) one++;
+        else if( tmp == 2) two++;
+        else three++;
     }
-    
-    for(int i = 0 ;i <= ara[3] ; i++ ) {
-        for(int j = 0 ; j <= ara[2]+ ara[3] - i ; j++ ) {
-            for(int k =0 ; k <= ara[3] + ara[2] + ara[1] - i - j ; k++ ) {
-                if(i == 0 && j ==0 && k==0) continue;
-                
-                if(i) dp[i][j][k] += 1.0*i*dp[i-1][j+1][k];
-                if(j) dp[i][j][k] += 1.0*j*dp[i][j-1][k+1];
-                if(k) dp[i][j][k] += 1.0*k*dp[i][j][k-1];
-                
-                dp[i][j][k] += n;
-                dp[i][j][k] /= 1.0*(i+j+k);
-            }
-        }
-    }
-    cout<<setprecision(12)<<fixed<<dp[ara[3]][ara[2]][ara[1]]<<'\n';
+
+    cout<<setprecision(12)<<fixed<<solve(one , two , three)<<endl;
     return 0;
-    
 }
