@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF49554862": {
+    "contest_id": 1106,
+    "language": "GNU C++11",
+    "path": "codeforces/1106/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Lunar New Year and Red Envelopes",
+    "problem_url": "https://codeforces.com/contest/1106/problem/E",
+    "submission_id": "CF49554862",
+    "submission_url": "https://codeforces.com/contest/1106/submission/49554862",
+    "tags": [
+      "data structures",
+      "dp",
+      "*2100"
+    ],
+    "timestamp": "Feb/07/2019 14:56"
+  },
   "CF49567061": {
     "contest_id": 1110,
     "language": "GNU C++11",
