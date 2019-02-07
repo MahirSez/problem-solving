@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF49567061": {
+    "contest_id": 1110,
+    "language": "GNU C++11",
+    "path": "codeforces/1110/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Parity",
+    "problem_url": "https://codeforces.com/contest/1110/problem/A",
+    "submission_id": "CF49567061",
+    "submission_url": "https://codeforces.com/contest/1110/submission/49567061",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Feb/07/2019 19:44"
+  },
   "CF49576555": {
     "contest_id": 1110,
     "language": "GNU C++11",
