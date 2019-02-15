@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF49965934": {
+    "contest_id": 1110,
+    "language": "GNU C++11",
+    "path": "codeforces/1110/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Jongmah",
+    "problem_url": "https://codeforces.com/contest/1110/problem/D",
+    "submission_id": "CF49965934",
+    "submission_url": "https://codeforces.com/contest/1110/submission/49965934",
+    "tags": [
+      "dp",
+      "*2200"
+    ],
+    "timestamp": "Feb/16/2019 02:42"
+  },
   "CF50103930": {
     "contest_id": 1117,
     "language": "GNU C++11",
