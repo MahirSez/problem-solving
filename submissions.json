@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF50103930": {
+    "contest_id": 1117,
+    "language": "GNU C++11",
+    "path": "codeforces/1117/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Best Subsegment",
+    "problem_url": "https://codeforces.com/contest/1117/problem/A",
+    "submission_id": "CF50103930",
+    "submission_url": "https://codeforces.com/contest/1117/submission/50103930",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Feb/18/2019 21:44"
+  },
   "CF50109800": {
     "contest_id": 1117,
     "language": "GNU C++11",
