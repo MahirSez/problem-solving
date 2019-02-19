@@ -20,7 +20,6 @@ int main()
             v.push_back({i,j});
             mp[{i,j}] = true;
             cnt++;
-            lastX = i , lastY = j;
 
             if( mp[{j,i}]) continue;
             v.push_back({j,i});
