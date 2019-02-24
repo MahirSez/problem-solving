@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF50468078": {
+    "contest_id": 1130,
+    "language": "GNU C++11",
+    "path": "codeforces/1130/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Wrong Answer",
+    "problem_url": "https://codeforces.com/contest/1130/problem/E",
+    "submission_id": "CF50468078",
+    "submission_url": "https://codeforces.com/contest/1130/submission/50468078",
+    "tags": [
+      "brute force",
+      "constructive algorithms",
+      "math",
+      "*2000"
+    ],
+    "timestamp": "Feb/25/2019 03:15"
+  },
   "CF50544352": {
     "contest_id": 1117,
     "language": "GNU C++11",
