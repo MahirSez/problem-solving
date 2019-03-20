@@ -70,13 +70,6 @@ int query(int num) {
 }
 map<int,bool>mp;
 
-
-void del(node* rt) {
-	if(rt->next[0]) del(rt->next[0]);
-	if(rt->next[1]) del(rt->next[1]);
-	delete rt;
-}
-
 int main()
 {
 	ios::sync_with_stdio(false);
@@ -99,7 +92,6 @@ int main()
 
 		cout<<query(tillNow)<<'\n';
     }
-    del(root);
     return 0;
 
 }
