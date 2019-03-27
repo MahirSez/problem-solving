@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF51912755": {
+    "contest_id": 37,
+    "language": "GNU C++17",
+    "path": "codeforces/37/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Old Berland Language",
+    "problem_url": "https://codeforces.com/contest/37/problem/C",
+    "submission_id": "CF51912755",
+    "submission_url": "https://codeforces.com/contest/37/submission/51912755",
+    "tags": [
+      "data structures",
+      "greedy",
+      "trees",
+      "*1900"
+    ],
+    "timestamp": "Mar/28/2019 01:10"
+  },
   "CF51951640": {
     "contest_id": 466,
     "language": "GNU C++17",
