@@ -13,113 +13,93 @@
 #define MOD     	1000000007
 #define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
-int n , m , lvl[MAX] , mxlvl[MAX] , sz[MAX] , mask[MAX] , ans[MAX];
-vector<int>edg[MAX] ;
-vector<pii> str[MAX];
-string ss;
+int n , m;
+vector<int>edg[MAX] ,msk[MAX];
+vector<pii> lvl[MAX];
+string str;
+int vis[MAX] , fin[MAX];
+int tim;
 
-vector<int>*vec[MAX];
 
-void dfs1(int node , int lev) {
+void dfs(int node, int lev) {
 
-    lvl[node] = lev;
-    mxlvl[node] = lev;
-
-    sz[node] = 1;
+    vis[node] = ++tim;
+    lvl[lev].push_back({tim , node});
     for(auto x : edg[node]) {
-        dfs1(x , lev+1);
-        sz[node] += sz[x];
-        mxlvl[node] = max(mxlvl[node] , mxlvl[x]);
+		dfs(x, lev+1);
     }
+    fin[node] = ++tim;
 }
 
-void dfs2(int node , int keep) {
+bool query(int node , int lev) {
 
-    int bigChild = -1;
-    for(auto x : edg[node]) {
-		if(bigChild == -1 || sz[x] > sz[bigChild] ) bigChild = x;
-    }
+    int frm = vis[node];
+    int to = fin[node];
 
-    for(auto x : edg[node]) {
-		if( x == bigChild) continue;
-        dfs2(x , 0);
-    }
+//	cout<<node<<" "<<lev<<" -> "<<endl;
+//    for(auto x: lvl[lev]) {
+//		cout<<x.vv<<" ";
+//    }
+//	cout<<lev<<" "<<lvl[lev].size()<<endl;
+	if(lvl[lev].size()==0) return true;
 
-    if( bigChild == -1) {
-        vec[node] = new vector<int>();
-    }
-    else {
-		dfs2(bigChild , 1);
+    int id1 = lower_bound(lvl[lev].begin() , lvl[lev].end() , pii(frm,0) ) - lvl[lev].begin() -1;
+    int id2 = lower_bound(lvl[lev].begin() , lvl[lev].end() , pii(to,0) ) - lvl[lev].begin() -1;
 
-        vec[node] = vec[bigChild];
-    }
+    int a =0, b =0;
+    if(id1 >=0 ) a = msk[lev][id1];
+    if( id2 >=0 ) b = msk[lev][id2];
 
-    vec[node]->push_back(node);
-    mask[lvl[node]] ^= (1<< (ss[node]-'a') ) ;
+    int tmp = a^b;
 
-    for(auto x: edg[node]) {
-
-        if(x == bigChild) continue;
-        for(auto xx: *vec[x]) {
-			vec[node]->push_back(xx);
-			mask[lvl[xx]] ^= (1<<(ss[xx]-'a') );
-        }
-    }
-
-    for(auto x : str[node]) {
-
-        int lev = x.uu;
-        int id = x.vv;
-
-        if( lev < lvl[node] || lev > mxlvl[node] ) {
-			ans[id] = 1;
-			continue;
-        }
-
-        ans[id] = (__builtin_popcount(mask[lev]) <=1 );
-    }
-    if( keep ==0) {
-
-        for(auto x : *vec[node]) {
-			mask[lvl[x]] ^= (1<<ss[x]-'a');
-        }
-    }
-
+    return (__builtin_popcount(tmp) <= 1 );
 }
 
 
 int main()
 {
-    fastRead;
-    cin>>n>>m;
-
-    for(int i = 2 ; i <= n ; i++ ) {
-		int par;
-		cin>>par;
-        edg[par].push_back(i);
-    }
-    cin>>ss;
-    ss = '*' + ss;
-    dfs1(1, 1);
-//	for(int i =1 ; i <= n ; i++ ) {
-//		cout<<sz[i]<<" ";
-//	}
-//	cout<<endl;
-
-	for(int i = 1 ; i<= m ; i++ ) {
-
-        int v , h;
-        cin>>v>>h;
-        str[v].push_back({h,i});
-    }
-    dfs2(1, 0);
-
-
-
-	for(int i =1 ; i <= m ; i++ ) {
-		if( ans[i]) cout<<"Yes\n";
-		else cout<<"No\n";
+	fastRead;
+	cin>>n>>m;
+	for(int i =2 ; i<=n ; i++ ) {
+        int tmp;
+        cin>>tmp;
+        edg[tmp].push_back(i);
 	}
-	cout<<'\n';
+
+	dfs(1,1);
+
+//	for(int i = 1 ; i<= n ; i++) {
+//		cout<<i<<" -> ";
+//		for(auto x : lvl[i]) {
+//			cout<<x.vv<<" "<<x.uu<<endl;;
+//		}
+//		cout<<endl;
+//	}
+	cin>>str;
+
+    str = '*' + str;
+
+
+    for(int i = 1 ; i<= n ; i++ ) {
+
+        int mask = 0;
+        for(auto x : lvl[i]) {
+
+            int node = x.vv;
+
+            int id = str[node]-'a';
+
+            mask = (mask ^ (1<<id) );
+            msk[i].push_back(mask);
+        }
+    }
+	while( m-- ) {
+
+        int node , lev;
+        cin>>node>>lev;
+        bool ok = query(node , lev);
+        if(ok) cout<<"Yes\n";
+        else cout<<"No\n";
+	}
 	return 0;
 }
