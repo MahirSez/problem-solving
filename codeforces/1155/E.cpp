@@ -96,6 +96,7 @@ int main()
             ans %= MOD;
             tmp = (1LL *tmp*i)%MOD ;
         }
+        ans = (ans %MOD + MOD)%MOD ;
 
         if( ans == 0) {
 			cout<<"! "<<i<<endl;
