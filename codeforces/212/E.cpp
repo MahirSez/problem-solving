@@ -19,52 +19,45 @@ int dp[MAX];
 
 set<int>ans;
 
+void dfs1(int node , int par) {
 
-void solve(vector<int>&str) {
+    dp[node] =1;
+    vector<int>str;
+    for(auto x: edg[node]) {
 
-    vector<bool>ret(n+1 , 0);
+        if( x == par) continue;
+        dfs1(x,node);
+        str.push_back(dp[x]);
+        dp[node] += dp[x];
+    }
 
-    ret[0] = 1;
+	if( node != 1) str.push_back(n - dp[node]);
+
+    vector<bool> ret(n+1 , 0);
+
+	ret[0] = 1;
 
     for(int i =0 ; i < str.size() ; i++ ) {
 
         int val = str[i];
-        for(int j = n ; j >=0 ; j--) {
 
-            if( j >= val && ret[j- val]) {
-				ret[j] = 1;
+        for(int j = n ; j >= 0 ; j--) {
+
+            if( j>= val && ret[j-val] ) {
+                ret[j] = 1;
             }
         }
     }
 
+    for(int i = 1; i < n-1 ; i++ ) {
 
-    for(int i = 1 ; i < n-1 ; i++) {
-		if( ret[i] ) ans.insert(i) , ans.insert(n-i-1);
+        if( ret[i] ) {
+			ans.insert(i) ;
+			ans.insert(n - i - 1);
+        }
     }
 }
 
-
-void dfs1(int node , int par) {
-
-
-    dp[node] = 1;
-	vector<int>str;
-
-    for(auto x : edg[node]) {
-		if( x == par) continue;
-        dfs1(x , node);
-
-        dp[node] += dp[x];
-        str.push_back(dp[x]);
-    }
-
-    if(dp[node] ==1 ) return ;
-
-    str.push_back(n - dp[node]);
-
-	solve(str);
-
-}
 
 int main()
 {
