@@ -13,108 +13,96 @@
 #define MOD     	1000000007
 #define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
-int n , col[MAX] ,sz[MAX] ,cnt[MAX] , fre[MAX];
-ll  ans[MAX] ;
-vector<int>edg[MAX] , *vec[MAX];
+int n , col[MAX] , sz[MAX], mxCnt[MAX] , st[MAX] , fn[MAX] , _time , id[MAX] , cnt[MAX];
+ll ans[MAX];
+vector<int>edg[MAX];
 
+void dfs1(int node , int par) {
 
-void dfs1(int node ,int par) {
+	sz[node] = 1;
+    st[node] = ++_time;
+    id[_time] = node;
 
-    sz[node] = 1;
-    for(auto x : edg[node]) {
-        if( x== par) continue;
+	for(auto x : edg[node]) {
+		if( x== par) continue;
         dfs1(x , node);
         sz[node] += sz[x];
-    }
+	}
+	fn[node] = ++_time;
 }
 
-
-void dfs2(int node , int par , int keep) {
+void dfs2(int node , int par, int keep) {
 
     int bigChild = -1;
 
     for(auto x : edg[node]) {
 
-        if(x == par) continue;
+        if( x == par) continue;
         if( bigChild == -1 || sz[x] > sz[bigChild] ) bigChild = x;
     }
 
-    for(auto x: edg[node] ) {
-		if( x == bigChild || x == par ) continue;
-        dfs2(x , node, 0 );
+
+    for(auto x : edg[node]) {
+        if( x == par || x == bigChild) continue;
+        dfs2(x , node , 0);
+
     }
 
+    if(bigChild != -1 ) {
 
-
-
-    if(bigChild ==-1) vec[node] = new vector<int>();
-    else {
-
-		dfs2(bigChild , node , 1);
-		vec[node] = vec[bigChild];
+        dfs2(bigChild , node , 1);
+        mxCnt[node] = mxCnt[bigChild];
         ans[node] = ans[bigChild];
-        fre[node] = fre[bigChild];
     }
-
-    vec[node]->push_back(node);
-
     cnt[col[node]]++;
 
-    if( cnt[col[node]] > fre[node]) {
-        ans[node] = col[node];
-		fre[node] = cnt[col[node]] ;
-    }
-    else if( cnt[col[node]] == fre[node] ) {
-        ans[node] += col[node];
-    }
+    if( cnt[col[node]] > mxCnt[node]) mxCnt[node] = cnt[col[node]] , ans[node] = col[node];
+    else if( cnt[col[node]] == mxCnt[node] ) ans[node] += col[node];
+
 
     for(auto x : edg[node]) {
 		if( x == par || x == bigChild ) continue;
 
-        for(auto xx : *vec[x] ) {
+        for(int i = st[x] ;  i<= fn[x] ; i++ ) {
+
+            if( id[i] ==0 ) continue;
+            int xx = id[i];
 
             cnt[col[xx]]++;
-            vec[node]->push_back(xx);
 
-			if( cnt[col[xx]] > fre[node]) {
-				ans[node] = col[xx];
-				fre[node] = cnt[col[xx]];
-			}
-			else if( cnt[col[xx]] == fre[node] ) {
-				ans[node] += col[xx];
-			}
-
+            if(cnt[col[xx]] > mxCnt[node]) mxCnt[node] = cnt[col[xx]] , ans[node] = col[xx];
+            else if( cnt[col[xx]] == mxCnt[node] ) ans[node] += col[xx];
         }
     }
 
-    if( keep ==0 ) {
+    if( keep == 0 ) {
 
-        for(auto x : *vec[node]) {
-            cnt[col[x]]--;
+        for(int i = st[node] ; i <= fn[node] ; i++ ) {
+            if( id[i] ==0 ) continue;
+            int xx = id[i];
+            cnt[col[xx]]--;
         }
     }
 
 }
 
-
-
 int main()
 {
-    fastRead;
-    cin>>n;
-    for(int i =1 ; i<= n; i++) cin>>col[i];
-
-    for(int i =1 ; i < n ; i++ ) {
-        int u , v;
-        cin>>u>>v;
-        edg[u].push_back(v);
-        edg[v].push_back(u);
-    }
-
+	fastRead;
+	cin>>n;
+	for(int i = 1 ; i <= n ; i++ ) cin>>col[i];
+	for(int i =1 ; i< n ; i++ ) {
+		int u , v;
+		cin>>u>>v;
+		edg[u].push_back(v);
+		edg[v].push_back(u);
+	}
     dfs1(1 , -1);
+    dfs2(1 , -1, 1);
 
-    dfs2(1 , -1 , 1);
-
-    for(int i =1 ; i<= n ; i++ ) cout<<ans[i]<<" ";
+    for(int i =1 ; i<= n ; i++ ) {
+		cout<<ans[i]<<" ";
+    }
     cout<<endl;
+    return 0;
 }
