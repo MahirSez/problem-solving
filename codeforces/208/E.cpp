@@ -30,32 +30,30 @@ void dfs(int node , int lev) {
     }
     en[node] = ++_time;
 }
+
 void build() {
 
-
-    for(int i = 1 ; (1<<i) <= n ; i++ ) {
-
+    for(int i =1 ; (1<<i) <= n ; i++ ) {
         for(int j = 1 ; j <= n ; j++ ) {
 
-            if( table[j][i-1] != -1) {
-                table[j][i] = table[ table[j][i-1] ][i-1];
-            }
+			if( table[j][i-1] != -1) table[j][i] = table[table[j][i-1]][i-1];
         }
     }
 }
 
-int getPar(int node , int k) {
+int getPar(int node ,int k) {
 
-	for(int i = 20 ; i >= 0 ; i-- ) {
+    for(int i = 20 ; i >= 0 ; i-- ) {
 
         if( (1<<i) <=k && table[node][i] != -1) {
             node = table[node][i];
             k -= (1<<i);
         }
-	}
-	if( k != 0) return -1;
+    }
+    if( k != 0) return -1;
     return node;
 }
+
 
 int main()
 {
