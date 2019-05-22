@@ -9,11 +9,14 @@
 #define pll			pair<ll,ll>
 #define INF     	1e9
 #define EPS     	1e-8
-#define MAX     	1000006
+#define MAX     	500005
 #define MOD     	1000000007
 #define fastRead 	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
 using namespace std;
-int n , ans[MAX] ,frmRoot[MAX] , sz[MAX] , lvl[MAX] , rec[MAX] , maskLen[(1<<23)+5];
+int n , ans[MAX] ,frmRoot[MAX] , sz[MAX] , lvl[MAX] , maskLen[(1<<23)];
+vector<int>xors(23);
+
+
 vector<pii>edg[MAX] ;
 vector<int> *vec[MAX];
 
@@ -53,7 +56,7 @@ void dfs2(int node , int keep) {
     
     for(int i =0 ; i < 23 ; i++ ) {
         
-        ans[node] = max(ans[node] , maskLen[ frmRoot[node]^ rec[i] ] - lvl[node] );
+        ans[node] = max(ans[node] , maskLen[ frmRoot[node]^ xors[i] ] - lvl[node] );
     }
     
     vec[node]->push_back(node);
@@ -68,7 +71,7 @@ void dfs2(int node , int keep) {
             
             for(int i =0 ; i < 23 ; i++ ) {
                 
-                ans[node] = max(ans[node] , lvl[xx] + maskLen[ frmRoot[xx]^rec[i] ]  - 2*lvl[node] );
+                ans[node] = max(ans[node] , lvl[xx] + maskLen[ frmRoot[xx]^xors[i] ]  - 2*lvl[node] );
             }
         }
         
@@ -90,27 +93,30 @@ void dfs2(int node , int keep) {
 
 int main()
 {
-    fastRead;
-    cin>>n;
+    
+    for(int i =1 ; i < 23 ; i++  ) {
+        xors[i] = (1<<(i-1) );
+    }
+    scanf("%d",&n);
+    
     for(int i = 2 ; i<=n ; i++ ) {
         
-        int par ;
-        string ch;
-        cin>>par>>ch;
-        edg[par].push_back({i , ch[0]-'a'});
+        int par;
+        char ch;
+        scanf("%d %c",&par , &ch);
+        
+        edg[par].push_back({i , ch-'a'});
     }
     
     dfs1(1, 0 , 0);
     
-    for(int i =1 ; i < 23 ; i++  ) {
-        rec[i] = (1<<(i-1) );
-    }
+   
     
     for(int i = 0 ; i < (1<<23) ; i++ ) maskLen[i] = -INF;
     
     dfs2(1 , 1);
     
-    for(int i =1 ; i <=n ; i++ ) cout<<ans[i]<<" ";
-    cout<<endl;
+    for(int i =1 ; i <=n ; i++ ) printf("%d ",ans[i]);
+    printf("\n");
     return 0;
 }
