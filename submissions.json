@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF54513204": {
+    "contest_id": 1009,
+    "language": "GNU C++14",
+    "path": "codeforces/1009/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Dominant Indices",
+    "problem_url": "https://codeforces.com/contest/1009/problem/F",
+    "submission_id": "CF54513204",
+    "submission_url": "https://codeforces.com/contest/1009/submission/54513204",
+    "tags": [
+      "data structures",
+      "dsu",
+      "trees",
+      "*2300"
+    ],
+    "timestamp": "May/23/2019 14:18"
+  },
   "CF54546006": {
     "contest_id": 739,
     "language": "GNU C++14",
