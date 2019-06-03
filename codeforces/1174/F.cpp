@@ -131,11 +131,6 @@ int main()
         
         dst_now_x = dst_now_x - dst_now_y - 1;
         
-        if( dst_now_x ==0 ) {
-            cout<<"! "<<now<<endl;
-            return 0;
-        }
-        
     }
     
     
