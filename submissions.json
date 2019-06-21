@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF55876495": {
+    "contest_id": 1180,
+    "language": "GNU C++14",
+    "path": "codeforces/1180/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Alex and a Rhombus",
+    "problem_url": "https://codeforces.com/contest/1180/problem/A",
+    "submission_id": "CF55876495",
+    "submission_url": "https://codeforces.com/contest/1180/submission/55876495",
+    "tags": [
+      "dp",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jun/21/2019 23:10"
+  },
   "CF55892143": {
     "contest_id": 1180,
     "language": "GNU C++14",
