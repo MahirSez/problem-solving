@@ -31,30 +31,32 @@ int main()
         deg[u]++;
         deg[v]++;
     }
-    shuffle(str.begin() , str.end() , rng);
-    
-    
-    for(int i =1 ; i <= n ; i++ ) ara[i] = deg[i];
-    
-    int tgt = (n+m+1)/2;
-    
-    for(auto x: str ) {
+    do {
+        ans.clear();
+        shuffle(str.begin() , str.end() , rng);
         
-        int u = x.uu;
-        int v = x.vv;
+        for(int i =1 ; i <= n ; i++ ) ara[i] = deg[i];
         
-        if( deg[u]-1 < (ara[u] + 1 )/2 ) {
-            ans.push_back(x);
-            continue;
+        int tgt = (n+m+1)/2;
+        
+        for(auto x: str ) {
+            
+            int u = x.uu;
+            int v = x.vv;
+            
+            if( deg[u]-1 < (ara[u] + 1 )/2 ) {
+                ans.push_back(x);
+                continue;
+            }
+            if( deg[v]-1 < (ara[v] + 1 )/2 ) {
+                ans.push_back(x);
+                continue;
+            }
+            
+            deg[u]--;
+            deg[v]--;
         }
-        if( deg[v]-1 < (ara[v] + 1 )/2 ) {
-            ans.push_back(x);
-            continue;
-        }
-        
-        deg[u]--;
-        deg[v]--;
-    }
+    } while(ans.size() > (n+m+1)/2);
     
     
     cout<<ans.size()<<'\n';
