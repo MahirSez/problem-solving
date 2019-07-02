@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF56411391": {
+    "contest_id": 1187,
+    "language": "GNU C++14",
+    "path": "codeforces/1187/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Tree Painting",
+    "problem_url": "https://codeforces.com/contest/1187/problem/E",
+    "submission_id": "CF56411391",
+    "submission_url": "https://codeforces.com/contest/1187/submission/56411391",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "trees",
+      "*2100"
+    ],
+    "timestamp": "Jul/02/2019 06:23"
+  },
   "CF56413271": {
     "contest_id": 1185,
     "language": "GNU C++14",
