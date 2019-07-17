@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF57217729": {
+    "contest_id": 1195,
+    "language": "GNU C++14",
+    "path": "codeforces/1195/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Drinks Choosing",
+    "problem_url": "https://codeforces.com/contest/1195/problem/A",
+    "submission_id": "CF57217729",
+    "submission_url": "https://codeforces.com/contest/1195/submission/57217729",
+    "tags": [
+      "greedy",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Jul/17/2019 21:15"
+  },
   "CF57224924": {
     "contest_id": 1195,
     "language": "GNU C++14",

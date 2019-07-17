@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+#define ll          long long int
+#define PI          acos(-1)
+#define read        freopen("in.txt","r",stdin)
+#define uu          first
+#define vv          second
+#define write       freopen("out.txt","w",stdout)
+#define pii         pair<int,int>
+#define pll         pair<ll,ll>
+#define INF         1e9
+#define EPS         1e-8
+#define MAX         1000006
+#define MOD         1000000007
+#define fastRead    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
+using namespace std;
+int n , k , ara[3000];
+int main()
+{
+    fastRead;
+    cin>>n>>k;
+    int cnt = 0 , ans = 0 , taken = 0;
+    int tgt = (n-1)/2 + 1;
+    for(int i =0 ; i < n ; i++ ) {
+        
+        int tmp;
+        cin>>tmp;
+        ara[tmp]++;
+    }
+    
+    for(int i =1 ; i<=1000 ; i++ ) {
+        
+        if( ara[i]&1) {
+            cnt++;
+            ans += ara[i]-1;
+        }
+        else ans += ara[i];
+    }
+    taken = ans/2;
+    
+    ans += (tgt - taken);
+    
+    cout<<ans<<endl;
+    return 0;
+}
