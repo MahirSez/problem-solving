@@ -17,7 +17,6 @@ int n  , ara[MAX];
 stack<int>st1  ,st2 ;
 int main()
 {
-    fastRead;
     cin>>n;
     int id = -1;
     for(int i =0 ; i < n ; i++ ) {
