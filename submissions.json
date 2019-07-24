@@ -1662,6 +1662,22 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF57666493": {
+    "contest_id": 1196,
+    "language": "GNU C++14",
+    "path": "codeforces/1196/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Robot Breakout",
+    "problem_url": "https://codeforces.com/contest/1196/problem/C",
+    "submission_id": "CF57666493",
+    "submission_url": "https://codeforces.com/contest/1196/submission/57666493",
+    "tags": [
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jul/24/2019 21:14"
+  },
   "CF57677526": {
     "contest_id": 1196,
     "language": "GNU C++14",
