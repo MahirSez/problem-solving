@@ -2207,6 +2207,22 @@
     ],
     "timestamp": "Oct/20/2020 11:29"
   },
+  "AC6843919": {
+    "contest_id": "abc137",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/abc137/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Summer Vacation",
+    "problem_url": "https://atcoder.jp/contests/abc137/tasks/abc137_d",
+    "submission_id": "AC6843919",
+    "submission_url": "https://atcoder.jp/contests/abc137/submissions/6843919",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Aug/11/2019 10:32"
+  },
   "AC8523210": {
     "contest_id": "agc038",
     "language": "C++14 (GCC 5.4.1)",
