@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF58811780": {
+    "contest_id": 257,
+    "language": "GNU C++14",
+    "path": "codeforces/257/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "View Angle",
+    "problem_url": "https://codeforces.com/contest/257/problem/C",
+    "submission_id": "CF58811780",
+    "submission_url": "https://codeforces.com/contest/257/submission/58811780",
+    "tags": [
+      "brute force",
+      "geometry",
+      "math",
+      "*1800"
+    ],
+    "timestamp": "Aug/14/2019 17:06"
+  },
   "CF58874089": {
     "contest_id": 1203,
     "language": "GNU C++14",
