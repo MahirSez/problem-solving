@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF63366921": {
+    "contest_id": 1251,
+    "language": "GNU C++14",
+    "path": "codeforces/1251/E2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E2",
+    "problem_name": "Voting (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1251/problem/E2",
+    "submission_id": "CF63366921",
+    "submission_url": "https://codeforces.com/contest/1251/submission/63366921",
+    "tags": [
+      "binary search",
+      "data structures",
+      "greedy",
+      "*2400"
+    ],
+    "timestamp": "Oct/25/2019 13:52"
+  },
   "CF63366952": {
     "contest_id": 1251,
     "language": "GNU C++14",
