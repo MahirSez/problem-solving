@@ -76,7 +76,7 @@ int main()
         }
     }
     if(n ==1 && m ==1 ) cout<<1<<'\n';
-    else cout<< (dpc[1][1] + dpr[1][1])%MOD <<'\n';
+    else cout<<( (dpc[1][1] + dpr[1][1])%MOD )<<'\n';
     
     return 0;
 }
