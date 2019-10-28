@@ -2,19 +2,19 @@
 #define ll long long int
 using namespace std;
 
-const int MOD = 1e9+7;
+const ll MOD = 1e9+7;
 
 int n , m;
-int ara[3000][3000] ;
-int dpr[3000][3000] , dpc[3000][3000] ;
-int cumr[3000][3000] , cumc[3000][3000];
-int dpcumr[3000][3000] , dpcumc[3000][3000];
+ll ara[3000][3000] ;
+ll dpr[3000][3000] , dpc[3000][3000] ;
+ll cumr[3000][3000] , cumc[3000][3000];
+ll dpcumr[3000][3000] , dpcumc[3000][3000];
 
 
-int add(ll a , ll b) {
+ll add(ll a , ll b) {
     return (a+ b <  MOD) ? (a+b) : (a+b - MOD);
 }
-int sub(ll a , ll b) {
+ll sub(ll a , ll b) {
     return add(a , MOD - b);
 }
 
