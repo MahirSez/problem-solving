@@ -11,13 +11,6 @@ ll cumr[3000][3000] , cumc[3000][3000];
 ll dpcumr[3000][3000] , dpcumc[3000][3000];
 
 
-ll add(ll a , ll b) {
-    return (a+ b <  MOD) ? (a+b) : (a+b - MOD);
-}
-ll sub(ll a , ll b) {
-    return add(a , MOD - b);
-}
-
 int main()
 {
     ios::sync_with_stdio(false);
@@ -39,6 +32,12 @@ int main()
         }
     }
     
+//    for(int i =1 ; i <=n ; i++ ) {
+//        for(int j =1; j <= m  ;j++ ) {
+//            cout<<cumc[i][j]<<" ";
+//        }
+//        cout<<'\n';
+//    }
     
     dpr[n][m] = dpc[n][m] = dpcumc[n][m] = dpcumr[n][m] = 1;
     
@@ -52,21 +51,32 @@ int main()
             
             int frm  = j+1 , to = m - rocks;
             
-            dpr[i][j] = sub( dpcumc[i][frm] , dpcumc[i][to+1]  );
+            dpr[i][j] = ( dpcumc[i][frm] - dpcumc[i][to+1] + MOD )%MOD;
+
+//            for(int k = frm ; k <=to ; k++ ) {
+//                    
+//                dpr[i][j] += dpc[i][k];
+//            }
             
             
             rocks = cumc[i+1][j];
             frm = i+1 , to = n - rocks;
             
-            dpc[i][j] = sub(dpcumr[frm][j] , dpcumr[to+1][j]) ;
+            dpc[i][j] = (dpcumr[frm][j] - dpcumr[to+1][j] + MOD )%MOD;
 
-            dpcumr[i][j] = add(dpr[i][j] , dpcumr[i+1][j]) ;
-            dpcumc[i][j] = add(dpc[i][j] , dpcumc[i][j+1]) ;
+//            for(int k = frm ; k <=to ; k++ ) {
+//                dpc[i][j] += dpr[k][j];
+//            }
+            
+//            cout<<i<<" "<<j<<" -- "<<dpr[i][j]<<" "<<dpc[i][j]<<'\n';
+            
+            dpcumr[i][j] = (dpr[i][j] + dpcumr[i+1][j])%MOD;
+            dpcumc[i][j] = (dpc[i][j] + dpcumc[i][j+1])%MOD;
             
         }
     }
     if(n ==1 && m ==1 ) cout<<1<<'\n';
-    else cout<< add(dpc[1][1] , dpr[1][1]) <<'\n';
+    else cout<< (dpc[1][1] + dpr[1][1])%MOD <<'\n';
     
     return 0;
 }
