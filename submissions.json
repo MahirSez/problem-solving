@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF63927104": {
+    "contest_id": 78,
+    "language": "GNU C++11",
+    "path": "codeforces/78/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Evacuation",
+    "problem_url": "https://codeforces.com/contest/78/problem/E",
+    "submission_id": "CF63927104",
+    "submission_url": "https://codeforces.com/contest/78/submission/63927104",
+    "tags": [
+      "flows",
+      "graphs",
+      "shortest paths",
+      "*2300"
+    ],
+    "timestamp": "Oct/31/2019 19:19"
+  },
   "CF63940128": {
     "contest_id": 727,
     "language": "GNU C++11",
