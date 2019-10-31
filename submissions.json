@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF63940128": {
+    "contest_id": 727,
+    "language": "GNU C++11",
+    "path": "codeforces/727/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "T-shirts Distribution",
+    "problem_url": "https://codeforces.com/contest/727/problem/D",
+    "submission_id": "CF63940128",
+    "submission_url": "https://codeforces.com/contest/727/submission/63940128",
+    "tags": [
+      "constructive algorithms",
+      "flows",
+      "greedy",
+      "*1800"
+    ],
+    "timestamp": "Oct/31/2019 23:13"
+  },
   "CF63965686": {
     "contest_id": 498,
     "language": "GNU C++11",
