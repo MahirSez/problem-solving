@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF64053816": {
+    "contest_id": 808,
+    "language": "GNU C++11",
+    "path": "codeforces/808/F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Card Game",
+    "problem_url": "https://codeforces.com/contest/808/problem/F",
+    "submission_id": "CF64053816",
+    "submission_url": "https://codeforces.com/contest/808/submission/64053816",
+    "tags": [
+      "binary search",
+      "flows",
+      "graphs",
+      "*2400"
+    ],
+    "timestamp": "Nov/02/2019 05:47"
+  },
   "CF64071552": {
     "contest_id": 1245,
     "language": "GNU C++11",
