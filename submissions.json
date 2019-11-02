@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF64071552": {
+    "contest_id": 1245,
+    "language": "GNU C++11",
+    "path": "codeforces/1245/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Hyakugoku and Ladders",
+    "problem_url": "https://codeforces.com/contest/1245/problem/E",
+    "submission_id": "CF64071552",
+    "submission_url": "https://codeforces.com/contest/1245/submission/64071552",
+    "tags": [
+      "dp",
+      "probabilities",
+      "shortest paths",
+      "*2300"
+    ],
+    "timestamp": "Nov/02/2019 13:34"
+  },
   "CF64160782": {
     "contest_id": 553,
     "language": "GNU C++11",
