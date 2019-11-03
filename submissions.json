@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF64160782": {
+    "contest_id": 553,
+    "language": "GNU C++11",
+    "path": "codeforces/553/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Love Triangles",
+    "problem_url": "https://codeforces.com/contest/553/problem/C",
+    "submission_id": "CF64160782",
+    "submission_url": "https://codeforces.com/contest/553/submission/64160782",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "*2200"
+    ],
+    "timestamp": "Nov/03/2019 20:26"
+  },
   "CF64209336": {
     "contest_id": 1256,
     "language": "GNU C++11",
