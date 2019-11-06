@@ -2,7 +2,6 @@
 #define ll          long long int
 #define uu          first
 #define vv          second
-#define pii         pair<int,int>
 #define pll         pair<ll,ll>
 #define INF         1e9
 #define MOD         1000000007
@@ -10,8 +9,8 @@
 using namespace std;
 
 const int MAX = 1e6 + 6;
-int dp[MAX]  , frm[MAX] , ans[MAX];
-pii ara[MAX];
+ll dp[MAX]  , frm[MAX] , ans[MAX];
+pll ara[MAX];
 int main()
 {
     fastRead;
