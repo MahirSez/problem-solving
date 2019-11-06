@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF64347279": {
+    "contest_id": 1256,
+    "language": "GNU C++11",
+    "path": "codeforces/1256/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Yet Another Division Into Teams",
+    "problem_url": "https://codeforces.com/contest/1256/problem/E",
+    "submission_id": "CF64347279",
+    "submission_url": "https://codeforces.com/contest/1256/submission/64347279",
+    "tags": [
+      "dp",
+      "greedy",
+      "sortings",
+      "*2000"
+    ],
+    "timestamp": "Nov/06/2019 12:55"
+  },
   "CF64348878": {
     "contest_id": 1256,
     "language": "GNU C++11",
