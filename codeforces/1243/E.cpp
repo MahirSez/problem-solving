@@ -121,7 +121,7 @@ int main()
                 
                 ans[mask] = ans[sub] ;
                 for(auto x : ans[other]) ans[mask].push_back(x);
-//                break;
+                break;
             }
         }
     }
