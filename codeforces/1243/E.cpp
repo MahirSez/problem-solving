@@ -111,7 +111,7 @@ int main()
     
     for(int mask = 0 ; mask < (1<<n) ; mask ++ ) {
         
-//        if(dp[mask]) continue;
+        if(dp[mask]) continue;
         for(int sub = mask ; sub > 0 ; sub = ( (sub-1)&mask)   ) {
             
             int other = mask ^sub;
