@@ -2207,6 +2207,22 @@
     ],
     "timestamp": "Oct/20/2020 11:29"
   },
+  "AC8523210": {
+    "contest_id": "agc038",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder/agc038/C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "LCMs",
+    "problem_url": "https://atcoder.jp/contests/agc038/tasks/agc038_c",
+    "submission_id": "AC8523210",
+    "submission_url": "https://atcoder.jp/contests/agc038/submissions/8523210",
+    "tags": [
+      "AtCoder",
+      "*700"
+    ],
+    "timestamp": "Nov/19/2019 12:49"
+  },
   "CF100272272": {
     "contest_id": 1455,
     "language": "GNU C++14",
