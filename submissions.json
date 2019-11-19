@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF65377836": {
+    "contest_id": 1255,
+    "language": "GNU C++14",
+    "path": "codeforces/1255/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Feeding Chicken",
+    "problem_url": "https://codeforces.com/contest/1255/problem/D",
+    "submission_id": "CF65377836",
+    "submission_url": "https://codeforces.com/contest/1255/submission/65377836",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Nov/19/2019 21:56"
+  },
   "CF65413142": {
     "contest_id": 1255,
     "language": "GNU C++14",
