@@ -12,16 +12,16 @@ using namespace std;
 const int MAX = 1e6 + 6;
 
 
-double power(double a , int b) {
-
-    double p ;
-    if( b == 0) return 1.0;
-    p = ( power(a , b/2));
-    p = ( p * p) ;
-    if( b & 1 ) p = ( p * a) ;
-    return p;
-}
-
+//double power(double a , int b) {
+//
+//    double p ;
+//    if( b == 0) return 1.0;
+//    p = ( power(a , b/2));
+//    p = ( p * p) ;
+//    if( b & 1 ) p = ( p * a) ;
+//    return p;
+//}
+//
 
 int main()
 {
@@ -32,7 +32,7 @@ int main()
     for(int i =1;  i< m ; i++ ) {
         
         double tmp = (i*1.0)/m;
-        tmp = power(tmp , n);
+        tmp = pow(tmp , n);
         sum += tmp;
     }
     
