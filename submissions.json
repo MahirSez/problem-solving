@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF65724669": {
+    "contest_id": 1227,
+    "language": "GNU C++14",
+    "path": "codeforces/1227/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Arson In Berland Forest",
+    "problem_url": "https://codeforces.com/contest/1227/problem/E",
+    "submission_id": "CF65724669",
+    "submission_url": "https://codeforces.com/contest/1227/submission/65724669",
+    "tags": [
+      "binary search",
+      "graphs",
+      "graphs",
+      "shortest paths",
+      "*2200"
+    ],
+    "timestamp": "Nov/26/2019 03:38"
+  },
   "CF65911797": {
     "contest_id": 1260,
     "language": "GNU C++14",
