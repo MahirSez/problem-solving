@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF69385461": {
+    "contest_id": 1294,
+    "language": "GNU C++14",
+    "path": "codeforces/1294/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Obtain a Permutation",
+    "problem_url": "https://codeforces.com/contest/1294/problem/E",
+    "submission_id": "CF69385461",
+    "submission_url": "https://codeforces.com/contest/1294/submission/69385461",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*1900"
+    ],
+    "timestamp": "Jan/23/2020 04:00"
+  },
   "CF69397155": {
     "contest_id": 1294,
     "language": "GNU C++14",
