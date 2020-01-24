@@ -1662,6 +1662,26 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF69450291": {
+    "contest_id": 1292,
+    "language": "GNU C++14",
+    "path": "codeforces/1292/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Xenon's Attack on the Gangs",
+    "problem_url": "https://codeforces.com/contest/1292/problem/C",
+    "submission_id": "CF69450291",
+    "submission_url": "https://codeforces.com/contest/1292/submission/69450291",
+    "tags": [
+      "combinatorics",
+      "dfs and similar",
+      "dp",
+      "greedy",
+      "trees",
+      "*2300"
+    ],
+    "timestamp": "Jan/24/2020 11:51"
+  },
   "CF69451288": {
     "contest_id": 1293,
     "language": "GNU C++14",
