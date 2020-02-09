@@ -1662,6 +1662,23 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF70615104": {
+    "contest_id": 1296,
+    "language": "GNU C++14",
+    "path": "codeforces/1296/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Fight with Monsters",
+    "problem_url": "https://codeforces.com/contest/1296/problem/D",
+    "submission_id": "CF70615104",
+    "submission_url": "https://codeforces.com/contest/1296/submission/70615104",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1500"
+    ],
+    "timestamp": "Feb/09/2020 15:43"
+  },
   "CF70617179": {
     "contest_id": 1296,
     "language": "GNU C++14",
