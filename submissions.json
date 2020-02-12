@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF70833182": {
+    "contest_id": 877,
+    "language": "GNU C++14",
+    "path": "codeforces/877/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Danil and a Part-time Job",
+    "problem_url": "https://codeforces.com/contest/877/problem/E",
+    "submission_id": "CF70833182",
+    "submission_url": "https://codeforces.com/contest/877/submission/70833182",
+    "tags": [
+      "bitmasks",
+      "data structures",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "Feb/12/2020 15:10"
+  },
   "CF70842803": {
     "contest_id": 940,
     "language": "GNU C++14",
