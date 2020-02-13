@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF70940583": {
+    "contest_id": 797,
+    "language": "GNU C++14",
+    "path": "codeforces/797/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Array Queries",
+    "problem_url": "https://codeforces.com/contest/797/problem/E",
+    "submission_id": "CF70940583",
+    "submission_url": "https://codeforces.com/contest/797/submission/70940583",
+    "tags": [
+      "brute force",
+      "data structures",
+      "dp",
+      "*2000"
+    ],
+    "timestamp": "Feb/13/2020 14:15"
+  },
   "CF70955960": {
     "contest_id": 846,
     "language": "GNU C++14",
