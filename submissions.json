@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF71163202": {
+    "contest_id": 1304,
+    "language": "GNU C++14",
+    "path": "codeforces/1304/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "1-Trees and Queries",
+    "problem_url": "https://codeforces.com/contest/1304/problem/E",
+    "submission_id": "CF71163202",
+    "submission_url": "https://codeforces.com/contest/1304/submission/71163202",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "shortest paths",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "Feb/15/2020 20:54"
+  },
   "CF71290447": {
     "contest_id": 1307,
     "language": "GNU C++14",
