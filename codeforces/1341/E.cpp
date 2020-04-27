@@ -80,8 +80,8 @@ int main()
         
  
     }
-    if(ans != INF)cout<<ans<<'\n';
-    else cout<<-1<<'\n';
+    if(ans  == INF) cout<<-1<<'\n';
+    else cout<<ans<<'\n';
     return 0;
     
     
