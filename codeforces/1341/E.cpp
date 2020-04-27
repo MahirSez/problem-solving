@@ -49,16 +49,19 @@ int main()
                 ans = min(tmp , ans);
             }
         }
+        if( _time == g) {
+            
+            if(dist[topid][0] ==-1 ) {
+                dist[topid][0] = dist[topid][g] + 1;
+                dq.push_back({topid , 0});
+            }
+            continue;
+        }
         
         if(topid > 0) {
             
             int gap = vec[topid] - vec[topid-1] ;
-            if(gap + _time == g && dist[topid-1][0] == -1 ) {
-                    
-                dist[topid-1][0] = dist[topid][_time] + 1;
-                dq.push_back({topid-1 , 0});
-            }
-            else if(gap + _time < g && dist[topid-1][gap+_time] == -1) {
+            if(gap + _time <= g && dist[topid-1][gap+_time] == -1) {
                 
                 dist[topid-1][gap + _time] = dist[topid][_time] ;
                 dq.push_front({topid-1 , gap + _time});
@@ -68,20 +71,17 @@ int main()
         if(topid < m-1 ) {
             
             int gap = vec[topid+1] - vec[topid] ;
-            if(gap + _time == g && dist[topid+1][0] == -1 ) {
-                    
-                dist[topid+1][0] = dist[topid][_time] + 1;
-                dq.push_back({topid+1 , 0});
-            }
-            else if(gap + _time < g && dist[topid+1][gap+_time] == -1) {
+            if(gap + _time <= g && dist[topid+1][gap+_time] == -1) {
                 
                 dist[topid+1][gap + _time] = dist[topid][_time] ;
                 dq.push_front({topid+1 , gap + _time});
             }
         }
+        
+ 
     }
-    if(ans  == INF) cout<<-1<<'\n';
-    else cout<<ans<<'\n';
+    if(ans != INF)cout<<ans<<'\n';
+    else cout<<-1<<'\n';
     return 0;
     
     
