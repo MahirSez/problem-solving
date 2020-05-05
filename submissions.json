@@ -1,4 +1,20 @@
 {
+  "AC12874338": {
+    "contest_id": "abc164",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc164/E.cpp",
+    "platform": "AtCoder",
+    "problem_index": "E",
+    "problem_name": "Two Currencies",
+    "problem_url": "https://atcoder.jp/contests/abc164/tasks/abc164_e",
+    "submission_id": "AC12874338",
+    "submission_url": "https://atcoder.jp/contests/abc164/submissions/12874338",
+    "tags": [
+      "AtCoder",
+      "*500"
+    ],
+    "timestamp": "May/06/2020 04:05"
+  },
   "AC13691993": {
     "contest_id": "abc167",
     "language": "Python (3.8.2)",
