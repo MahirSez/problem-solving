@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF80627654": {
+    "contest_id": 1353,
+    "language": "GNU C++14",
+    "path": "codeforces/1353/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "K-periodic Garland",
+    "problem_url": "https://codeforces.com/contest/1353/problem/E",
+    "submission_id": "CF80627654",
+    "submission_url": "https://codeforces.com/contest/1353/submission/80627654",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "*1900"
+    ],
+    "timestamp": "May/18/2020 23:35"
+  },
   "CF80629706": {
     "contest_id": 1353,
     "language": "GNU C++14",
