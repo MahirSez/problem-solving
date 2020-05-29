@@ -5,7 +5,7 @@ ara = [ inn[_][1:] for _ in range(n)]
 
 ans = 1e9
 
-for mask in range(2**n):
+for mask in range(2**15):
 	cost = 0
 	cnt = [0 for _ in range(m)]
 	for i in range(n):
