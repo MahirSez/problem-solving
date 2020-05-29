@@ -14,7 +14,11 @@ for mask in range(2**n):
 		cost += c[i]
 		for j in range(m):
 			cnt[j] += ara[i][j]
-	if min(cnt) >= x:
+	ok = 1
+	for i in range(m):
+		if cnt[i] < x:
+			ok = 0
+	if ok:
 		ans = min(ans, cost)
 
 if ans == 1e9:
