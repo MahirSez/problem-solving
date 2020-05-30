@@ -1,4 +1,20 @@
 {
+  "AC13713063": {
+    "contest_id": "abc168",
+    "language": "PyPy3 (7.3.0)",
+    "path": "atcoder/abc168/D.py",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": ".. (Double Dots)",
+    "problem_url": "https://atcoder.jp/contests/abc168/tasks/abc168_d",
+    "submission_id": "AC13713063",
+    "submission_url": "https://atcoder.jp/contests/abc168/submissions/13713063",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "May/30/2020 17:16"
+  },
   "AC13734701": {
     "contest_id": "abc168",
     "language": "PyPy3 (7.3.0)",

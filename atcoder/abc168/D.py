@@ -19,17 +19,20 @@ def bfs():
 	ans[1] = 1
 
 	while q:
-		top = q.popleft()
+		top = q[0]
+		q.popleft()
 		for child in edg[top]:
 			if ans[child] == -1:
+				# print(str(top) + " --> " + str(child))
 				ans[child] = top
+				# print(ans[child])
 				q.append(child)
 
 
 bfs()
-
 if -1 in ans[1:]:
 	print("No")
 else:
 	print("Yes")
-	print("\n".join(map(str, ans[2:])))
+	for i in ans[2:]:
+		print(i)
