@@ -32,14 +32,18 @@ def pre():
 def ncr(nn, rr):
 	if nn < 0 or nn < rr or rr < 0:
 		return 0
-	# up = fact[nn]
-	# down = (invFact[rr] * invFact[nn - rr]) % MOD
-	return (fact[nn] * invFact[rr] * invFact[nn - rr]) % MOD
+	up = fact[nn]
+	down = (invFact[rr] * invFact[nn - rr]) % MOD
+	return (up * down) % MOD
 
 
 pre()
 n, m, k = map(int, input().split())
 
+# for i in range(10):
+# 	print(fact[i], end=" ")
+# print()
+# print(ncr(10 , 4))
 
 ans = 0
 for i in range(k + 1):
