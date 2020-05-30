@@ -1,4 +1,20 @@
 {
+  "AC13710951": {
+    "contest_id": "abc168",
+    "language": "PyPy3 (7.3.0)",
+    "path": "atcoder/abc168/C.py",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": ": (Colon)",
+    "problem_url": "https://atcoder.jp/contests/abc168/tasks/abc168_c",
+    "submission_id": "AC13710951",
+    "submission_url": "https://atcoder.jp/contests/abc168/submissions/13710951",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "May/30/2020 15:38"
+  },
   "AC13711342": {
     "contest_id": "abc168",
     "language": "PyPy3 (7.3.0)",

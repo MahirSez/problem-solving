@@ -9,7 +9,7 @@ ang = abs( ang1 - ang2 )
 ang = min(ang, 360 - ang) * math.pi / 180
 
 ans = a*a + b*b - 2*a*b*math.cos(ang)
-print("%.12f" % math.sqrt(ans) )
+print(math.sqrt(ans) )
 
 
 
