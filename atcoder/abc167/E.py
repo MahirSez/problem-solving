@@ -5,8 +5,18 @@ fact = [0] * MAX
 invFact = [0] * MAX
 
 
+def bigmod(a, b):
+	if b == 0:
+		return 1
+	ret = bigmod(a, b // 2)
+	ret = (ret * ret) % MOD
+	if b % 2 == 1:
+		ret = (ret * a) % MOD
+	return ret
+
+
 def mod_inverse(a):
-	return pow(a, MOD - 2, MOD)
+	return bigmod(a, MOD - 2)
 
 
 def pre():
@@ -32,6 +42,6 @@ n, m, k = map(int, input().split())
 
 ans = 0
 for i in range(k + 1):
-	ans = (ans + m * pow(m - 1, n - 1 - i, MOD) * ncr(n - 1, i) ) % MOD
+	ans = (ans + m * bigmod(m - 1, n - 1 - i) * ncr(n - 1, i) ) % MOD
 
 print(ans)
