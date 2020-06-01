@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF82242966": {
+    "contest_id": 1178,
+    "language": "PyPy 3",
+    "path": "codeforces/1178/C.py",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Tiles",
+    "problem_url": "https://codeforces.com/contest/1178/problem/C",
+    "submission_id": "CF82242966",
+    "submission_url": "https://codeforces.com/contest/1178/submission/82242966",
+    "tags": [
+      "combinatorics",
+      "greedy",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Jun/01/2020 23:29"
+  },
   "CF82318846": {
     "contest_id": 1313,
     "language": "GNU C++14",
