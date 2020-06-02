@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF82323098": {
+    "contest_id": 1313,
+    "language": "GNU C++14",
+    "path": "codeforces/1313/C1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C1",
+    "problem_name": "Skyscrapers (easy version)",
+    "problem_url": "https://codeforces.com/contest/1313/problem/C1",
+    "submission_id": "CF82323098",
+    "submission_url": "https://codeforces.com/contest/1313/submission/82323098",
+    "tags": [
+      "brute force",
+      "data structures",
+      "dp",
+      "greedy",
+      "*1500"
+    ],
+    "timestamp": "Jun/02/2020 21:30"
+  },
   "CF82325109": {
     "contest_id": 1313,
     "language": "GNU C++14",
