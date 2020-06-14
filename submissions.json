@@ -1,4 +1,20 @@
 {
+  "AC14283973": {
+    "contest_id": "abc170",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/abc170/A.cpp",
+    "platform": "AtCoder",
+    "problem_index": "A",
+    "problem_name": "Five Variables",
+    "problem_url": "https://atcoder.jp/contests/abc170/tasks/abc170_a",
+    "submission_id": "AC14283973",
+    "submission_url": "https://atcoder.jp/contests/abc170/submissions/14283973",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jun/14/2020 18:00"
+  },
   "AC14291091": {
     "contest_id": "abc170",
     "language": "C++ (GCC 9.2.1)",
