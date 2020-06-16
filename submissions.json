@@ -1662,6 +1662,24 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF84011725": {
+    "contest_id": 1367,
+    "language": "GNU C++14",
+    "path": "codeforces/1367/F1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F1",
+    "problem_name": "Flying Sort (Easy Version)",
+    "problem_url": "https://codeforces.com/contest/1367/problem/F1",
+    "submission_id": "CF84011725",
+    "submission_url": "https://codeforces.com/contest/1367/submission/84011725",
+    "tags": [
+      "dp",
+      "greedy",
+      "two pointers",
+      "*2100"
+    ],
+    "timestamp": "Jun/16/2020 22:16"
+  },
   "CF84085204": {
     "contest_id": 1367,
     "language": "GNU C++14",
