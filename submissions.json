@@ -1662,6 +1662,27 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF84085204": {
+    "contest_id": 1367,
+    "language": "GNU C++14",
+    "path": "codeforces/1367/F2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F2",
+    "problem_name": "Flying Sort (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1367/problem/F2",
+    "submission_id": "CF84085204",
+    "submission_url": "https://codeforces.com/contest/1367/submission/84085204",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "greedy",
+      "sortings",
+      "two pointers",
+      "*2400"
+    ],
+    "timestamp": "Jun/17/2020 21:01"
+  },
   "CF84132988": {
     "contest_id": 1363,
     "language": "GNU C++14",
