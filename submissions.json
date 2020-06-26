@@ -1,4 +1,20 @@
 {
+  "AC14689322": {
+    "contest_id": "dp",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/dp/R.cpp",
+    "platform": "AtCoder",
+    "problem_index": "R",
+    "problem_name": "Walk",
+    "problem_url": "https://atcoder.jp/contests/dp/tasks/dp_r",
+    "submission_id": "AC14689322",
+    "submission_url": "https://atcoder.jp/contests/dp/submissions/14689322",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jun/26/2020 11:48"
+  },
   "AC14855687": {
     "contest_id": "abc172",
     "language": "C++ (GCC 9.2.1)",
