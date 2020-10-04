@@ -9,43 +9,53 @@
 using namespace std;
 const int INF = 1e9;
 const ll MOD = 1e9 + 7;
- 
+
 const int N = 1e6 + 6;
- 
+
 int main() {
-    fastio;
     int n;
     cin>>n;
-    vector<int>fre(n+3);
+    vector<int>fre(n+3), mark(n+3);
     for(int i =0 ; i < n ; i++ ) {
         int tmp;
         cin>>tmp;
         fre[tmp]++;
     }
-    int mn = 0;
- 
+    int mn = 0, mx = 0;
+
     for(int i =1 ; i <=n ; i++ ) {
+
         if(fre[i] ) {
             mn++;
             i += 2;
         }
     }
- 
-    for(int i = 1 ; i <= n ; i++ ) {
-        if(fre[i] && fre[i-1] == 0) {
-            fre[i]--;
-            fre[i-1]++;
-        }
-    }
-    for(int i = n ; i >=1 ; i--) {
+
+    for(int i =1 ; i <=n ; i++ ) {
         if(fre[i] && fre[i+1] == 0) {
-            fre[i+1]++;
-            fre[i]--;
+            int cnt = 0 , tot = 0;
+            int j = i;
+            for(; j >= 0 && fre[j] && mark[j] == 0; j--) cnt++ , tot += fre[j];
+
+            // cout<<i<<" "<<j<<" "<<tot<<" "<<cnt<<" "<<mx<<'\n';
+            if(tot == cnt) {
+                mx += cnt;
+                continue;
+            }
+            if(mark[j] ==0) {
+                cnt++;
+                mark[j] = 1;
+            }
+            if(tot == cnt) {
+                mx += cnt;
+                continue;
+            }
+            cnt++;
+            mark[i+1] = 1;
+            mx += cnt;
         }
     }
- 
-    int mx = 0;
-    for(auto x : fre) mx += (x > 0);
+
     cout<<mn<<" "<<mx<<'\n';
     return 0;
 }
