@@ -29,7 +29,7 @@ ll modInverse( ll x ) {
 
 
 int main() {
-    fastio;
+
     int n;
     cin>>n;
     string s;
