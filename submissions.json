@@ -1662,6 +1662,25 @@
     ],
     "timestamp": "Feb/19/2021 11:36"
   },
+  "CF95008008": {
+    "contest_id": 1248,
+    "language": "GNU C++14",
+    "path": "codeforces/1248/D1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D1",
+    "problem_name": "The World Is Just a Programming Task (Easy Version)",
+    "problem_url": "https://codeforces.com/contest/1248/problem/D1",
+    "submission_id": "CF95008008",
+    "submission_url": "https://codeforces.com/contest/1248/submission/95008008",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation",
+      "*2000"
+    ],
+    "timestamp": "Oct/09/2020 23:08"
+  },
   "CF95167224": {
     "contest_id": 1427,
     "language": "GNU C++14",
