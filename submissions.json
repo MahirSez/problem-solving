@@ -1,4 +1,20 @@
 {
+  "AC17391679": {
+    "contest_id": "hhkb2020",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder/hhkb2020/D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Squares",
+    "problem_url": "https://atcoder.jp/contests/hhkb2020/tasks/hhkb2020_d",
+    "submission_id": "AC17391679",
+    "submission_url": "https://atcoder.jp/contests/hhkb2020/submissions/17391679",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Oct/14/2020 13:56"
+  },
   "AC17393334": {
     "contest_id": "hhkb2020",
     "language": "C++ (GCC 9.2.1)",
