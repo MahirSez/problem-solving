@@ -1,4 +1,23 @@
 {
+  "CF100495216": {
+    "contest_id": 1451,
+    "language": "GNU C++14",
+    "path": "codeforces/1451/E2.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E2",
+    "problem_name": "Bitwise Queries (Hard Version)",
+    "problem_url": "https://codeforces.com/contest/1451/problem/E2",
+    "submission_id": "CF100495216",
+    "submission_url": "https://codeforces.com/contest/1451/submission/100495216",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "interactive",
+      "math",
+      "*2300"
+    ],
+    "timestamp": "Dec/06/2020 12:31"
+  },
   "CF100495241": {
     "contest_id": 1451,
     "language": "GNU C++14",
