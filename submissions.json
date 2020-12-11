@@ -1,4 +1,25 @@
 {
+  "CF100944144": {
+    "contest_id": 1461,
+    "language": "GNU C++14",
+    "path": "codeforces/1461/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Divide and Summarize",
+    "problem_url": "https://codeforces.com/contest/1461/problem/D",
+    "submission_id": "CF100944144",
+    "submission_url": "https://codeforces.com/contest/1461/submission/100944144",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "divide and conquer",
+      "implementation",
+      "sortings",
+      "*1600"
+    ],
+    "timestamp": "Dec/11/2020 21:50"
+  },
   "CF102087964": {
     "contest_id": 425,
     "language": "GNU C++14",
