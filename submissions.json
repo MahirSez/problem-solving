@@ -1,4 +1,22 @@
 {
+  "CF100923561": {
+    "contest_id": 1461,
+    "language": "GNU C++14",
+    "path": "codeforces/1461/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Find the Spruce",
+    "problem_url": "https://codeforces.com/contest/1461/problem/B",
+    "submission_id": "CF100923561",
+    "submission_url": "https://codeforces.com/contest/1461/submission/100923561",
+    "tags": [
+      "brute force",
+      "dp",
+      "implementation",
+      "*1400"
+    ],
+    "timestamp": "Dec/11/2020 20:53"
+  },
   "CF100937384": {
     "contest_id": 1461,
     "language": "GNU C++14",
