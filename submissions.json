@@ -1,4 +1,20 @@
 {
+  "CF102087964": {
+    "contest_id": 425,
+    "language": "GNU C++14",
+    "path": "codeforces/425/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Sereja and Sets",
+    "problem_url": "https://codeforces.com/contest/425/problem/E",
+    "submission_id": "CF102087964",
+    "submission_url": "https://codeforces.com/contest/425/submission/102087964",
+    "tags": [
+      "dp",
+      "*2500"
+    ],
+    "timestamp": "Dec/23/2020 10:34"
+  },
   "CF102947345": {
     "contest_id": 1466,
     "language": "GNU C++14",
