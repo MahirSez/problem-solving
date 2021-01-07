@@ -1,4 +1,23 @@
 {
+  "CF103638177": {
+    "contest_id": 1471,
+    "language": "GNU C++14",
+    "path": "codeforces/1471/E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Strange Shuffle",
+    "problem_url": "https://codeforces.com/contest/1471/problem/E",
+    "submission_id": "CF103638177",
+    "submission_url": "https://codeforces.com/contest/1471/submission/103638177",
+    "tags": [
+      "binary search",
+      "brute force",
+      "constructive algorithms",
+      "interactive",
+      "*2500"
+    ],
+    "timestamp": "Jan/07/2021 19:50"
+  },
   "CF103826906": {
     "contest_id": 1467,
     "language": "GNU C++14",
