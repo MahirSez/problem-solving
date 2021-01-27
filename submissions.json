@@ -1,4 +1,22 @@
 {
+  "CF105546882": {
+    "contest_id": 1468,
+    "language": "GNU C++14",
+    "path": "codeforces/1468/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "LaIS",
+    "problem_url": "https://codeforces.com/contest/1468/problem/A",
+    "submission_id": "CF105546882",
+    "submission_url": "https://codeforces.com/contest/1468/submission/105546882",
+    "tags": [
+      "data structures",
+      "dp",
+      "greedy",
+      "*2200"
+    ],
+    "timestamp": "Jan/27/2021 13:52"
+  },
   "CF105695027": {
     "contest_id": 1477,
     "language": "GNU C++14",
