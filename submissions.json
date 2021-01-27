@@ -1,4 +1,21 @@
 {
+  "CF105537416": {
+    "contest_id": 1468,
+    "language": "GNU C++14",
+    "path": "codeforces/1468/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Firecrackers",
+    "problem_url": "https://codeforces.com/contest/1468/problem/D",
+    "submission_id": "CF105537416",
+    "submission_url": "https://codeforces.com/contest/1468/submission/105537416",
+    "tags": [
+      "binary search",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Jan/27/2021 12:02"
+  },
   "CF105538938": {
     "contest_id": 1468,
     "language": "GNU C++14",
