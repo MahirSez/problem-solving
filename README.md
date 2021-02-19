@@ -5,10 +5,11 @@ Submissions
 ## Introduction
 
 A repository to keep track of problem solving practice, containing solutions from platforms:
-{profile_placeholder}
+* Codeforces &nbsp; [![Codeforces](https://run.kaist.ac.kr/badges/codeforces/Rogue33.svg)](https://codeforces.com/profile/Rogue33)
+
 
 ## Contents
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-{submission_placeholder}
+1 | [E - Paired Payment](https://codeforces.com/contest/1486/problem/E) | [GNU C++17](./codeforces/1486/E.cpp) | `binary search` `constructive algorithms` `dp` `graphs` `shortest paths` | Feb/19/2021 11:36 | 
