@@ -1,4 +1,22 @@
 {
+  "CF107898833": {
+    "contest_id": 1486,
+    "language": "GNU C++17",
+    "path": "codeforces/1486/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Max Median",
+    "problem_url": "https://codeforces.com/contest/1486/problem/D",
+    "submission_id": "CF107898833",
+    "submission_url": "https://codeforces.com/contest/1486/submission/107898833",
+    "tags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "two pointers"
+    ],
+    "timestamp": "Feb/19/2021 09:25"
+  },
   "CF107907889": {
     "contest_id": 1486,
     "language": "GNU C++17",
