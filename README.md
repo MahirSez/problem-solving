@@ -13,6 +13,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+1210 | [G - Old Floppy Drive ](https://codeforces.com/contest/1490/problem/G) | [GNU C++17](./codeforces/1490/G.cpp) | `binary search` `data structures` `math` `*1900` | Feb/21/2021 18:54 | 
 1209 | [E - Paired Payment](https://codeforces.com/contest/1486/problem/E) | [GNU C++17](./codeforces/1486/E.cpp) | `binary search` `constructive algorithms` `dp` `graphs` `shortest paths` | Feb/19/2021 11:36 | 
 1208 | [D - Max Median](https://codeforces.com/contest/1486/problem/D) | [GNU C++17](./codeforces/1486/D.cpp) | `binary search` `data structures` `dp` `two pointers` | Feb/19/2021 09:25 | 
 1207 | [C2 - Guessing the Greatest (hard version)](https://codeforces.com/contest/1486/problem/C2) | [GNU C++17](./codeforces/1486/C2.cpp) | `binary search` `interactive` | Feb/18/2021 22:43 | 
@@ -205,8 +206,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 1020 | [E - Coprime](https://atcoder.jp/contests/abc177/tasks/abc177_e) | [C++ (GCC 9.2.1)](./atcoder/abc177/E.cpp) | `AtCoder` `*500` | Aug/29/2020 18:21 | 
 1019 | [D - Friends](https://atcoder.jp/contests/abc177/tasks/abc177_d) | [C++ (GCC 9.2.1)](./atcoder/abc177/D.cpp) | `AtCoder` `*400` | Aug/29/2020 18:14 | 
 1018 | [C - Sum of product of pairs](https://atcoder.jp/contests/abc177/tasks/abc177_c) | [C++ (GCC 9.2.1)](./atcoder/abc177/C.cpp) | `AtCoder` `*300` | Aug/29/2020 18:10 | 
-1017 | [A - Don't be late](https://atcoder.jp/contests/abc177/tasks/abc177_a) | [C++ (GCC 9.2.1)](./atcoder/abc177/A.cpp) | `AtCoder` `*100` | Aug/29/2020 18:06 | 
-1016 | [B - Substring](https://atcoder.jp/contests/abc177/tasks/abc177_b) | [C++ (GCC 9.2.1)](./atcoder/abc177/B.cpp) | `AtCoder` `*200` | Aug/29/2020 18:06 | 
+1017 | [B - Substring](https://atcoder.jp/contests/abc177/tasks/abc177_b) | [C++ (GCC 9.2.1)](./atcoder/abc177/B.cpp) | `AtCoder` `*200` | Aug/29/2020 18:06 | 
+1016 | [A - Don't be late](https://atcoder.jp/contests/abc177/tasks/abc177_a) | [C++ (GCC 9.2.1)](./atcoder/abc177/A.cpp) | `AtCoder` `*100` | Aug/29/2020 18:06 | 
 1015 | [B - Quasi Binary](https://codeforces.com/contest/538/problem/B) | [GNU C++14](./codeforces/538/B.cpp) | `constructive algorithms` `dp` `greedy` `implementation` `*1400` | Aug/28/2020 21:44 | 
 1014 | [E - Clear the Multiset](https://codeforces.com/contest/1400/problem/E) | [GNU C++14](./codeforces/1400/E.cpp) | `data structures` `divide and conquer` `dp` `greedy` `*2200` | Aug/26/2020 00:39 | 
 1013 | [D - Zigzags](https://codeforces.com/contest/1400/problem/D) | [GNU C++14](./codeforces/1400/D.cpp) | `brute force` `combinatorics` `data structures` `math` `two pointers` `*1900` | Aug/25/2020 21:45 | 
@@ -499,8 +500,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 726 | [E - Active Infants](https://atcoder.jp/contests/abc163/tasks/abc163_e) | [C++ (GCC 9.2.1)](./atcoder/abc163/E.cpp) | `AtCoder` `*500` | Apr/19/2020 18:58 | 
 725 | [D - Sum of Large Numbers](https://atcoder.jp/contests/abc163/tasks/abc163_d) | [C++ (GCC 9.2.1)](./atcoder/abc163/D.cpp) | `AtCoder` `*400` | Apr/19/2020 18:30 | 
 724 | [C - management](https://atcoder.jp/contests/abc163/tasks/abc163_c) | [C++ (GCC 9.2.1)](./atcoder/abc163/C.cpp) | `AtCoder` `*300` | Apr/19/2020 18:08 | 
-723 | [A - Circle Pond](https://atcoder.jp/contests/abc163/tasks/abc163_a) | [C++ (GCC 9.2.1)](./atcoder/abc163/A.cpp) | `AtCoder` `*100` | Apr/19/2020 18:05 | 
-722 | [B - Homework](https://atcoder.jp/contests/abc163/tasks/abc163_b) | [C++ (GCC 9.2.1)](./atcoder/abc163/B.cpp) | `AtCoder` `*200` | Apr/19/2020 18:05 | 
+723 | [B - Homework](https://atcoder.jp/contests/abc163/tasks/abc163_b) | [C++ (GCC 9.2.1)](./atcoder/abc163/B.cpp) | `AtCoder` `*200` | Apr/19/2020 18:05 | 
+722 | [A - Circle Pond](https://atcoder.jp/contests/abc163/tasks/abc163_a) | [C++ (GCC 9.2.1)](./atcoder/abc163/A.cpp) | `AtCoder` `*100` | Apr/19/2020 18:05 | 
 721 | [A - Recommendations](https://codeforces.com/contest/1314/problem/A) | [GNU C++14](./codeforces/1314/A.cpp) | `data structures` `greedy` `sortings` `*1700` | Feb/23/2020 23:31 | 
 720 | [E - Vowels](https://codeforces.com/contest/383/problem/E) | [GNU C++14](./codeforces/383/E.cpp) | `combinatorics` `divide and conquer` `dp` `*2700` | Feb/23/2020 05:34 | 
 719 | [E - Compatible Numbers](https://codeforces.com/contest/165/problem/E) | [GNU C++14](./codeforces/165/E.cpp) | `bitmasks` `brute force` `dfs and similar` `dp` `*2200` | Feb/22/2020 21:17 | 
